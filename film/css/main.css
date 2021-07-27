@@ -1,0 +1,808 @@
+@import url(//fonts.googleapis.com/earlyaccess/nanumbrushscript.css);
+
+@font-face {
+    font-family: 'BMJUA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+ font-family: 'NanumBarunGothic';
+ font-style: normal;
+ font-weight: 400;
+ src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+ src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+}
+
+@font-face {
+ font-family: 'NanumBarunGothic';
+ font-style: normal;
+ font-weight: 700;
+ src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+ src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+}
+
+@font-face {
+ font-family: 'NanumBarunGothic';
+ font-style: normal;
+ font-weight: 300;
+ src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+ src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+tilte {
+	text-decoration: none;
+}
+
+/*top_section*/
+#header_bg {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.active{
+  background-color: #fff;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  
+  -webkit-transition-duration:0.4s;
+  -webkit-transition-timing-function:ease;
+}
+
+.deactive{
+  
+  background-color: transparent;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  
+  -webkit-transition-duration:0.4s;
+  -webkit-transition-timing-function:ease;
+}
+
+#wrap_header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+#wrap_header:hover {
+	background: #fff;
+	transition: 0.5s;
+}
+
+#top {
+	width: 1300px;
+	height: 100px;
+	margin: 0 auto;
+}
+
+#top div.nav {
+	display: flex;
+}
+
+#top div.nav a.logo_btn {
+    width: 300px;
+    height: 45px;
+    display: inline-block;
+    margin-right: 200px;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+#top div.nav a.logo_btn div.logo {
+	width: 96px;
+	height: 40px;
+	display: inline-block;
+    background: url(../images/logo.png);
+    float: left;
+}
+
+#top div.nav a.logo_btn div.text {
+	width: 180px;
+	height: 45px;
+	font-size: 38px;
+	color: #000;
+	font-family: 'Nanum Brush Script', cursive;
+	display: inline-block;
+	margin-left: 20px;
+}
+
+#top div.nav a.logo_btn:hover div.logo {
+    background: url(../images/logo_w.png);
+}
+
+#top div.nav a.logo_btn:hover div.text {
+	color: #f3ae02;
+}
+
+#top div.nav div.btn {
+	width: 130px;
+	height: 100px;
+	font-size: 34px;
+	font-family: 'Nanum Brush Script', cursive;
+	text-align: center;
+	margin-top: 30px;
+	position: relative;
+}
+
+#top div.nav div.btn ul.sub {
+	position: absolute;
+	top: 70px;
+	opacity: 0;
+	font-size: 28px;
+	font-family: 'Nanum Brush Script', cursive;
+}
+
+#top div.nav div.btn:hover ul.sub {
+	transition: 0.5s;
+	background: #fff;
+	opacity: 1;
+}
+
+#top div.nav div.btn:hover ul.sub > li {
+	width: 130px;
+	height: 45px;
+	line-height: 45px;
+}
+
+#top div.nav div.btn:hover ul.sub > li a {
+	font-size: 28px;
+	font-family: 'Nanum Brush Script', cursive;
+	color: #000;
+	text-align: center;
+}
+
+#top div.nav div.btn:hover ul.sub > li a:hover {
+	color: #f3ae02;
+}
+
+#top div.nav div.btn a {
+	display: inline-block;
+	width: 130px;
+	height: 45px;
+	color: #000;
+	text-align: center;
+}
+
+#top div.nav div.btn a:hover {
+	color: #f3ae02;
+}
+
+#top div.nav div.login {
+	display: inline-block;
+	width: 90px;
+	height: 30px;
+	border: 2px solid #fff;
+	border-radius: 50px;
+	background: #f3ae02;
+	font-size: 16px;
+	letter-spacing: -1px;
+	text-align: center;
+	line-height: 30px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 30px;
+}
+
+#top div.nav div.login a {
+	display: inline-block;
+	width: 90px;
+	height: 30px;
+	border-radius: 50px;
+	color: #222;
+	border: 0px;
+}
+
+/*main_section*/
+#main_wrap {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#main {
+	width: 100%;
+	height: 820px;
+	background: url(../images/main_img01.jpg) center center no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: relative;
+}
+
+#main button.btn_l {
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	background: #000;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 50px;
+	opacity: 0.7;
+	font-size: 70px;
+	color: #fff;
+	line-height: 90px;
+	text-align: center;
+	padding-right: 5px;
+	box-sizing: border-box;
+	border: 0;
+}
+
+#main button.btn_r {
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	background: #000;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 50px;
+	opacity: 0.7;
+	font-size: 70px;
+	color: #fff;
+	line-height: 90px;
+	text-align: center;
+	padding-left: 5px;
+	box-sizing: border-box;
+	border: 0;
+}
+
+#main button.btn_l:hover {
+	background: #ffa30f;
+    cursor: pointer;
+}
+
+#main button.btn_r:hover {
+	background: #ffa30f;
+    cursor: pointer;
+}
+
+/*section_1*/
+
+#btn {
+	width: 1300px;
+	height: 516px;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+#btn > div#btn_bg {
+	width: 325px;
+	height: 516px;
+	position: relative;
+	float: left;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+#btn > div#btn_bg div.opacity {
+	width: 325px;
+	height: 516px;
+	line-height: 516px;
+	color: #fff;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: -516px;
+	opacity: 0;
+}
+
+#btn > div#btn_bg:hover div.opacity {
+	top: 0;
+	transition: 0.7s;
+	opacity: 1;
+	cursor: pointer;
+}
+
+#btn > div#btn_bg:hover div.opacity p.icon {
+	margin-top: 50px;
+}
+
+/*section_2*/
+#section_2 {
+	width: 1300px;
+	height: 840px;
+	margin: 0 auto;
+	position: relative;
+}
+#section_2 h1 {
+    height: 50px;
+    vertical-align: middle;
+}
+#section_2 div.line {
+	width: 1px;
+	height: 680px;
+	position: absolute;
+	top: 120px;
+	left: 650px;
+	background: #ddd;
+	z-index: 99;
+}
+
+#section_2 div.best {
+	width: 1300px;
+}
+
+#section_2 ul.cam {
+	width: 600px;
+	height: 690px;
+	display: inline-block;
+	margin-right: 90px;
+	cursor: pointer;
+}
+
+#section_2 ul.cam li.leica {
+	float: left;
+	width: 380px;
+	height: 380px;
+}
+
+#section_2 ul.cam li.box {
+	float: left;
+	width: 220px;
+	height: 380px;
+}
+
+#section_2 ul.cam li.leica p.img {
+	width: 380px;
+	height: 380px;
+	overflow: hidden;
+}
+
+#section_2 ul.cam li.leica p.img img.cam {
+	width: 380px;
+	height: 380px;
+	object-fit: cover;
+}
+
+#section_2 ul.cam li.box p.text {
+	width: 180px;
+	height: 220px;
+	font-size: 28px;
+	color: #222;
+	font-weight: bold;
+	margin-top: 40px;
+	margin-left: 40px;
+}
+
+#section_2 ul.cam li.box p.text span.color {
+	color: #a70505;
+}
+
+#section_2 ul.cam li.box p.text span.scale {
+	font-size: 22px;
+	font-weight: normal;
+}
+
+#section_2 ul.cam li.leica p.img:hover img.cam {
+	transform: scale(125%);
+	transition: 0.7s;
+}
+
+#section_2 ul.cam li.box p.price {
+	width: 180px;
+	height: 40px;
+	font-size: 28px;
+	color: #222;
+	font-weight: bold;
+	margin-bottom: 80px;
+	margin-left: 40px;
+}
+
+#section_2 ul.film {
+	display: inline-block;
+	width: 600px;
+	height: 690px;
+	cursor: pointer;
+}
+
+#section_2 ul.film li.kodak {
+	float: left;
+	width: 380px;
+	height: 380px;
+}
+
+#section_2 ul.film li.box {
+	float: left;
+	width: 220px;
+	height: 380px;
+}
+
+#section_2 ul.film li.kodak p.img {
+	width: 380px;
+	height: 380px;
+	overflow: hidden;
+}
+
+#section_2 ul.film li.kodak p.img img.film {
+	width: 340px;
+	height: 340px;
+	object-fit: cover;
+	margin: 20px;
+}
+
+#section_2 ul.film li.box p.text {
+	width: 180px;
+	height: 220px;
+	font-size: 28px;
+	color: #222;
+	font-weight: bold;
+	margin-top: 40px;
+	margin-left: 40px;
+}
+
+#section_2 ul.film li.box p.text span.color {
+	color: #a70505;
+}
+
+#section_2 ul.film li.box p.text span.scale {
+	font-size: 22px;
+	font-weight: normal;
+}
+
+#section_2 ul.film li.kodak p.img:hover img.film {
+	transform: scale(125%);
+	transition: 0.7s;
+}
+
+#section_2 ul.film li.box p.price {
+	width: 180px;
+	height: 40px;
+	font-size: 28px;
+	color: #222;
+	font-weight: bold;
+	margin-bottom: 80px;
+	margin-left: 40px;
+}
+
+#section_2 hr {
+	width: 1300px;
+	margin: 20px auto;
+}
+
+/*section_3*/
+#section_3 {
+	width: 100%;
+	height: 1000px;
+	background: url(../images/video_bg_t.png) no-repeat;
+	background-size: cover;
+}
+
+#video {
+	width: 1600px;
+	height: 1000px;
+	position: relative;
+	margin: 0 auto;
+}
+
+#video div.polaroid {
+	position: absolute;
+	top: 200px;
+	left: 0;
+}
+
+#video div.youtube {
+	position: absolute;
+	top: 282px;
+	left: 63px;
+	text-align: center;
+}
+
+#video div.youtube p.video_text {
+	font-size: 40px;
+	display: inline-block;
+    font-family: 'BMJUA';
+}
+
+#video div.masking {
+	position: absolute;
+	top: 150px;
+	left: 225px;
+}
+
+#video div.film_box {
+	width: 700px;
+	height: 700px;
+	position: absolute;
+	top: 200px;
+	right: 50px;
+}
+
+#video div.film_box p.text {
+	font-size: 36px;
+	font-weight: bold;
+	color: #fff;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#video div.film_box p.text_2 {
+	font-size: 36px;
+	font-weight: bold;
+	color: #fff;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: right;
+}
+
+#video div.film_box p.text span.color_1 {
+	color: #ffa30f;
+}
+
+#video div.film_box p.text span.color_2 {
+	color: #ba1f0a;
+}
+
+#video div.film_box p.text span.scale {
+	font-size: 18px;
+	font-weight: normal;
+}
+
+#video div.film_box p.text_2 span.color_1 {
+	color: #ffa30f;
+}
+
+#video div.film_box p.text_2 span.color_2 {
+	color: #ba1f0a;
+}
+
+#video div.film_box p.text_2 span.scale {
+	font-size: 18px;
+	font-weight: normal;
+}
+
+
+#video div.film_box p.img_1 {
+	width: 300px;
+	height: 300px;
+	overflow: hidden;
+	border-radius: 50%;
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+#video div.film_box p.img_2 {
+	width: 300px;
+	height: 300px;
+	overflow: hidden;
+	border-radius: 50%;
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+#video div.film_box p.img_1:hover {
+	transform: scale(110%);
+	transition: 0.7s;
+}
+
+#video div.film_box p.img_2:hover {
+	transform: scale(110%);
+	transition: 0.7s;
+}
+
+#video div.film_box p.img_1 img {
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+}
+
+#video div.film_box p.img_2 img {
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+}
+
+#video div.film_box p.empty {
+	width: 100px;
+	display: inline-block;
+}
+
+#video div.line {
+	width: 1px;
+	height: 700px;
+	background: #fff;
+	position: absolute;
+	top: 150px;
+	left: 800px;
+}
+
+/*section_4*/
+
+#section_4 {
+    width: 100%;
+    height: 2500px;
+    background: #333;
+}
+
+#gallery {
+	width: 1600px;
+	height: 2500px;
+	position: relative;
+	margin: 0 auto;
+}
+
+#gallery div.img_1 {
+	width: 600px;
+	height: 400px;
+	position: absolute;
+	top: 50px;
+	left: 0;
+}
+
+#gallery div.img_1 img {
+	width: 600px;
+	height: 400px;
+	object-fit: cover;
+}
+
+#gallery div.img_2 {
+	width: 600px;
+	height: 400px;
+	position: absolute;
+	top: 650px;
+	right: 0;
+}
+
+#gallery div.img_2 img {
+	width: 600px;
+	height: 400px;
+	object-fit: cover;
+}
+
+#gallery div.img_3 {
+	width: 600px;
+	height: 400px;
+	position: absolute;
+	top: 1250px;
+	left: 0;
+}
+
+#gallery div.img_3 img {
+	width: 600px;
+	height: 400px;
+	object-fit: cover;
+}
+
+#gallery div.img_4 {
+	width: 600px;
+	height: 400px;
+	position: absolute;
+	top: 1850px;
+	right: 0;
+}
+
+#gallery div.img_4 img {
+	width: 600px;
+	height: 400px;
+	object-fit: cover;
+}
+
+/*copyright*/
+#copy_wrap {
+	width: 100%;
+	position: absolute;
+    top: 5726px;
+	left: 0;
+    background: #dedede;
+}
+
+#copyright {
+    width: 1300px;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#copyright div.copy_logo {
+    position: absolute;
+    top: 55px;
+    left: 50px;
+    display: inline-block;
+}
+
+#copyright div.copy_menu {
+    position: absolute;
+    top: 25px;
+    left: 330px;
+    display: inline-block;
+}
+
+#copyright div.copy_text {
+    position: absolute;
+    top: 80px;
+    left: 350px;
+    display: inline-block;
+}
+
+#copyright div.copy_icon {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    display: inline-block;
+}
+
+#copyright div.copy_logo a p.logo_img {
+    width: 119px;
+    height: 50px;
+    background-image: url(../images/logo-copy_g.png);
+    display: inline-block;
+    vertical-align: top;
+}
+
+#copyright div.copy_logo a p.logo_text {
+    font-size: 32px;
+    font-weight: bold;
+    color: #999;
+    font-family: 'Nanum Brush Script', cursive;
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: top;
+    line-height: 80%;
+}
+
+#copyright div.copy_logo p.logo_text span {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+#copyright div.copy_logo a:hover p.logo_img {
+    background-image: url(../images/logo-copy.png);
+}
+
+#copyright div.copy_logo a:hover p.logo_text {
+    color: #222;
+}
+
+#copyright div.copy_menu p.menu {
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 10px 20px;
+    font-family: 'NanumBarunGothic';
+}
+
+#copyright div.copy_menu p.menu a {
+    color: #999;
+}
+
+#copyright div.copy_menu p.menu a:hover {
+    color: #222;
+}
+
+#copyright div.copy_text p.text {
+    font-size: 16px;
+    font-family: 'NanumBarunGothic';
+    color: #999;
+}
+
+#copyright div.copy_icon p {
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: middle;
+}
