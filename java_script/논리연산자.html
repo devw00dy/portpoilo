@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        var a = 10;
+        var b = 20;
+        var c = 30;
+        var d = 40;
+        var result;
+        var sum;
+        
+        sum = (a+b)/2>=16 ? "javascript": "hello";
+        document.write(sum,"<br>");
+        
+        result = a>b || b>c || c<d; //f, f, t
+        document.write(result,"<br>");
+        
+        result = a<=b && b>=c && c<=d; //t, f, t
+        document.write(result,"<br>");
+        
+        result = a<=b && b<=c && c<=d; // t, t, t
+        document.write(result,"<br>");
+        
+        result = !(a>b); //f -> t
+        document.write(result,"<br>");
+        
+        result= a>b ? "참":"거짓";
+        document.write(result,"<br>");
+        
+        var aa = 80; //국어
+        var bb = 70; //수학
+        var cc = 80; //영어
+        
+        var result1;
+        
+        result1 = (aa+bb+cc)/3>=80 ? "합격":"불합격";
+        document.write(result1,"<br>");
+        
+        
+        var a = 80; //컴퓨터일반
+        var b = 40; //스프레드시트
+        var result; //결과
+        
+        result = a>=40 && b>=40 && (a+b)/2>=60 ? "합격":"불합격";
+        document.write(result,"<br>");
+        
+        var height = 180; // 키
+        var weight = 74; // 몸무게
+        
+        //평균체중 = (키-100)*0.9
+        var normal = (height-100)*0.9;
+        var result = weight-normal;
+        
+        document.write("키 : ", height ,"<br>");
+        document.write("몸무게 : ", weight ,"<br>");
+        document.write("적정 체중 : ", normal ,"<br>");
+        document.write("현재 적정 체중보다 : ", result ,"kg 초과<br>");
+        
+        
+    </script>
+
+
+</head>
+<body>
+    
+</body>
+</html>

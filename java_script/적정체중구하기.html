@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        /*var height = 180; //키
+        var weight = 75; // 체중
+        
+        var normal //평균체중
+        normal = (height-100)*0.9;
+        
+        document.write("당신의 키는? ",height,"<br>");
+        document.write("당신의 몸무게는? ",weight,"<br>");
+        document.write("당신의 표준체중은? ",normal,"<br>");*/
+        
+        var name = prompt("당신의 이름은?",""); //이름 
+        var height = prompt("당신의 키는?","0"); //키
+        var weight = prompt("당신의 몸무게는?","0"); //몸무게
+        
+        var normal = (height-100)*0.9; //평균체중
+        var result = weight >= normal-5 && weight <= normal+5;
+        
+        result = result ? "적정 체중입니다." : "적정 체중이 아닙니다.";
+        
+        document.write("당신의 이름은?",name,"<br>");
+        document.write("당신의 키는?",height,"<br>");
+        document.write("당신의 몸무게는?",weight,"<br>");
+        document.write("당신의 평균체중은?",normal,"범위±5<br>");
+        document.write("당신의 결과는?",result,"<br>");
+        
+        
+        
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

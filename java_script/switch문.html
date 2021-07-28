@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        var site = prompt("네이버, 다음, 네이트, 구글 중 즐겨 찾는 사이트는?","");
+        
+        var url;
+        
+        switch(site) {
+            case "구글" : url ="www.goole.com";
+            break;
+                
+            case "다음" : url ="www.daum.net";
+            break;
+                
+            case "네이트" : url ="www.nate.com";;
+            break;
+                
+            case "네이버" : url ="www.naver.com";
+            break;    
+        }
+        if(url){
+            location.href = "http://"+url;
+        }else {
+            location.reload();
+        }
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        var a = Number(prompt("국어 점수?","0"));
+        var b = Number(prompt("수학 점수?","0"));
+        var c = Number(prompt("영어 점수?","0"));
+        
+        var total = (a+b+c)/3;
+        
+        switch(true) {
+            case (total>=90) : document.write("A학점","<br>");
+            break;
+            
+            case (total>=80) : document.write("B학점","<br>");
+            break;
+                
+            case (total>=70) : document.write("C학점","<br>");
+            break;
+            
+            case (total>=60) : document.write("D학점","<br>");
+            break;
+                
+            default : document.write("F학점","<br>");
+            break;
+        }
+               
+       /* if(total>=90){
+            document.write("A학점","<br>");
+        }else if(total>=80){
+            document.write("B학점","<br>");
+        }else if(total>=70){
+            document.write("C학점","<br>");
+        }else if(total>=60){
+            document.write("D학점","<br>");
+        }else {
+            document.write("F학점");
+        }*/
+                          
+        
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

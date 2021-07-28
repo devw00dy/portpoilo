@@ -259,6 +259,23 @@ tilte {
     color: #f3ae02;
 }
 
+#cmp_img {
+	width: 1300px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#cmp_img div.img img {
+	width: 850px;
+	object-fit: cover;
+	position: absolute;
+}
+
+#cmp_img div.text {
+	font-size: 36px;
+	color: #000;
+}
+
 /*copyright*/
 #copy_wrap {
     width: 100%;

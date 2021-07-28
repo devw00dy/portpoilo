@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        p.red {
+            color: red;
+        }
+
+        p.green {
+            color: green;
+        }
+
+        p.aqua {
+            color: aqua;
+        }
+    </style>
+
+    <script>
+        /*var 초기값;
+        while(조건식){
+            코드;
+            증감값;
+        }*/
+
+        /*for(초기값; 조건식; 증감식){
+            코드;
+        }*/
+
+        /*for(var i=1; i<=10; i++){
+            document.write("안녕하세요"+i,"<br>");
+        }
+        */
+
+        /*1부터 100까지 
+        5의 배수 빨강
+        7의 배수 녹색
+        둘다 아쿠아색*/
+
+        /*   for(var i=1; i<=100; i++){
+               if(i%5==0 && i%7!=0){
+                   document.write("<p class='red'>"+i+"</p>");
+               }else if(i%7==0 && i%5!=0){
+                   document.write("<p class='green'>"+i+"</p>");
+               }else if(i%5==0 && i%7==0){
+                   document.write("<p class='aqua'>"+i+"</p>");
+               }
+           }
+           */
+
+        /*    
+            for(var i=1; i<=10; i++){
+                if(i==6) break;  /*멈추고 밖으로 나옴*/
+        /*  document.write(i,"<br>");
+        }
+        */
+
+        /*  for(var i=1;i<=10; i++){
+              if(i%2==0)continue;  /*건너뛰기*/
+        /*document.write(i,"<br>");
+        }*/
+
+        /*for(var i=1; i<=3; i++){
+            for(var k=1;k<=2;k++){
+              document.write(i+"행"+k+"열","<br>");
+            }
+        }*/
+
+        var num = 1;
+        var t = "<table border='1'>";
+        for (var i=1; i<=5; i++) {
+            t += "<tr>";
+            for (var k=1; k<=5; k++) {
+                t += "<td>"+num+"</td>";
+                num++;
+            }
+            t += "</tr>";
+        }
+        t += "</table>";
+
+        document.write(t);
+    </script>
+
+</head>
+
+<body>
+
+</body></html>

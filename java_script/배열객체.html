@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+       /* var a = new Array();
+        a[0]=30;
+        a[1]="따르릉";
+        a[2]=true;  //방법1
+        
+        var a =new Array(30, "따르릉", true); //방법2
+        
+        var a=[30, "따르릉", true]; //방법3
+        */
+        
+    /*    var arr = [30, "따르릉", true, "한국", 200];
+        
+        document.write("<h3>배열값 가져오기-1</h3>");
+        document.write(arr[0],"<br>");
+        document.write(arr[1],"<br>");
+        document.write(arr[2],"<br>");
+        
+        document.write("<h3>배열값 가져오기-2</h3>");
+        for(var i=0;i<arr.length;i++){
+            document.write(arr[i],"<br>");
+        }*/
+        /*var arr1 = ["사당", "교대", "방배", "강남"];
+        var arr2 = ["신사", "압구정", "옥수"];
+        
+        var result = arr1.join("-"); 
+        //배열에 저장된 값을 지정한 문자로 연결
+        document.write(result,"<br>");
+        
+        var result = arr1.concat(arr2); //2개의 배열을 하나의 배열로
+        document.write(result,"<br>");
+        
+        var result = arr1.sort(); //오름차순 정렬
+        document.write(result,"<br>");
+        
+        var result = arr2.reverse(); //거꾸로
+        document.write(result,"<br>");
+        */
+        
+        var greenArr = ["교대","방배","강남"];
+        var yellowArr = ["미금","정자","기흥"];
+        
+        greenArr.splice(2,1,"서초","역삼","<br>"); 
+        //2번 인덱스로부터 1개의 데이터 삭제 후 서초 역삼 삽입
+        document.write(greenArr);
+        
+        var data1 = yellowArr.pop(); //마지막데이터 삭제(기흥)
+        var data2 = yellowArr.shift(); //맨 앞쪽 데이터 삭제 (미금)
+        
+        yellowArr.push(data2); //마지막 데이터 삽입
+        document.write(yellowArr,"<br>");
+        
+        yellowArr.unshift(data1); //앞쪽에 삽입
+        document.write(yellowArr,"<br>");
+        
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
