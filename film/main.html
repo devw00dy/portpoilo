@@ -2,230 +2,253 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>main</title>
-    <link rel="stylesheet" href="css/main.css">
+	<meta charset="UTF-8">
+	<title>main</title>
+	<link rel="stylesheet" href="css/main.css">
 
-    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="js/main.js">
 
-    <script type="text/javascript" src="js/main.js"></script>
+	<link rel="stylesheet" href="fontawesome/css/all.min.css">
 
-    <script src="js/prefixfree.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="js/prefixfree.min.js"></script>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script>
-        $(function(){
-    $(document).on('scroll', function(){
-        if($(window).scrollTop() > 50){
-            $("#header_bg").removeClass("deactive");
-            $("#header_bg").addClass("active");
-        }else{
-            $("#header_bg").removeClass("active");
-            $("#header_bg").addClass("deactive");
-        }
-    })
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script>
+		$(function() {
+			$(document).on('scroll', function() {
+				if ($(window).scrollTop() > 50) {
+					$("#header_bg").removeClass("deactive");
+					$("#header_bg").addClass("active");
+				} else {
+					$("#header_bg").removeClass("active");
+					$("#header_bg").addClass("deactive");
+				}
+			})
 
-});
-    </script>
-    <script>
-        AOS.init();
+		});
 
-    </script>
-    <!--top_section-->
-    <div id="header_bg" class="deactive">
-    </div>
-    <div id="wrap_header">
-        <div id="top">
-            <div class="nav">
-                <a class="logo_btn" href="main.html"><div class="logo">
-                </div>
-                <div class="text">필름현상소&nbsp;필&#59;름</div></a>
-                <div class="btn"><a href="gallery.html">Gallery</a>
-                    <ul class="sub">
-                        <li><a href="#a">This month's</a></li>
-                        <li><a href="#a">My</a></li>
-                    </ul>
-                </div>
-                <div class="btn"><a href="store.html">Store</a>
-                    <ul class="sub">
-                        <li><a href="store_sub.html">Camera</a></li>
-                        <li><a href="store_sub.html">Film</a></li>
-                        <li><a href="store_sub.html">Cam ACC</a></li>
-                    </ul>
-                </div>
-                <div class="btn"><a href="class.html">Class</a>
-                    <ul class="sub">
-                        <li><a href="#a">Filming</a></li>
-                        <li><a href="#a">Correction</a></li>
+	</script>
+	<script>
+		AOS.init();
 
-                    </ul>
-                </div>
-                <div class="btn"><a href="develop.html">Develop</a>
-                </div>
-                <div class="btn"><a href="about.html">About Us</a>
-                </div>
-                <div class="login"><a href="login.html">LOGIN</a></div>
-            </div>
-        </div>
-    </div>
-    <!--main_section-->
-    <div id="main_wrap">
-        <div id="main">
+	</script>
+	<!--top_section-->
+	<div id="header_bg" class="deactive">
+	</div>
+	<div id="wrap_header">
+		<div id="top">
+			<div class="nav">
+				<a class="logo_btn" href="main.html">
+					<div class="logo">
+					</div>
+					<div class="text">필름현상소&nbsp;필&#59;름</div>
+				</a>
+				<div class="btn"><a href="gallery.html">Gallery</a>
+					<ul class="sub">
+						<li><a href="#a">This month's</a></li>
+						<li><a href="#a">My</a></li>
+					</ul>
+				</div>
+				<div class="btn"><a href="store.html">Store</a>
+					<ul class="sub">
+						<li><a href="store_sub.html">Camera</a></li>
+						<li><a href="store_sub.html">Film</a></li>
+						<li><a href="store_sub.html">Cam ACC</a></li>
+					</ul>
+				</div>
+				<div class="btn"><a href="class.html">Class</a>
+					<ul class="sub">
+						<li><a href="#a">Filming</a></li>
+						<li><a href="#a">Correction</a></li>
 
-            <button class="btn_l" onclick="changePic(0);"><i class="fas fa-angle-left"></i></button>
-            <button class="btn_r" onclick="changePic(1);"><i class="fas fa-angle-right"></i></button>
-        </div>
-        <!--section_1-->
-        <div id="btn">
-            <div id="btn_bg">
-                <img src="images/btn_1.jpg">
-                <div class="opacity">
-                    <p class="icon"><img src="images/icon_1.png"></p>
-                </div>
-            </div>
-            <div id="btn_bg">
-                <img src="images/btn_2.jpg">
-                <div class="opacity">
-                    <p class="icon"><img src="images/icon_3.png"></p>
-                </div>
-            </div>
-            <div id="btn_bg"><img src="images/btn_3.jpg">
-                <div class="opacity">
-                    <p class="icon"><img src="images/icon_2.png"></p>
-                </div>
-            </div>
-            <div id="btn_bg"><img src="images/btn_4.jpg">
-                <div class="opacity">
-                    <p class="icon"><img src="images/icon_4.png"></p>
-                </div>
-            </div>
-        </div>
-        <!--section_2-->
-        <div id="section_2">
-            <div class="line"></div>
-            <h1>BEST</h1>
-            <hr class="best">
-            <div class="best">
-                <ul class="cam">
-                    <li class="leica">
-                        <p class="img"><img class="cam" src="images/btn_1.jpg"></p>
-                    </li>
-                    <li class="box">
-                        <p class="text"><span class="color">Leica</span> mp silver<br><span class="scale">35mm 0.72</span>
-                        </p>
-                        <p class="price">1,200,000 ₩</p>
-                    </li>
-                    <li class="sub_img"><img src="images/sub_img_1.jpg"></li>
-                </ul>
-                <ul class="film">
-                    <li class="kodak">
-                        <p class="img"><img class="film" src="images/kodak.jpg"></p>
-                    </li>
-                    <li class="box">
-                        <p class="text"><span class="color">KODAK</span> ColoePlus silver<br><span class="scale">35mm iso 200, 36 EXR</span>
-                        </p>
-                        <p class="price">8,900 ₩</p>
-                    </li>
-                    <li class="sub_img"><img src="images/sub_img_2.jpg"></li>
-                </ul>
-            </div>
-        </div>
+					</ul>
+				</div>
+				<div class="btn"><a href="develop.html">Develop</a>
+				</div>
+				<div class="btn"><a href="about.html">About Us</a>
+				</div>
+				<div class="login"><a href="login.html">LOGIN</a></div>
+			</div>
+		</div>
+	</div>
+	<!--main_section-->
+	<div id="main_wrap">
+		<div id="main">
 
-        <!--section_3_video-->
-        <div id="section_3">
-            <div id="video">
-                <div class="polaroid">
-                    <img src="images/polaroid_1.jpg">
-                </div>
-                <div class="youtube"><iframe width="630" height="340" src="https://www.youtube.com/embed/G6_F7Wwj-fA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <br><br><br><br>
+			<button class="btn_l" onclick="changePic(0);"><i class="fas fa-angle-left"></i></button>
+			<button class="btn_r" onclick="changePic(1);"><i class="fas fa-angle-right"></i></button>
+		</div>
+		<script>
+			var num = 1;
 
-                    <p class="video_text">필름 비교 영상 &#40;유튜버 코코그래퍼&#41;</p>
-                </div>
+			function changePic(idx) {
+				if (idx) {
+					if (num == 5) num = 1;
+					else
+						num++;
+				} else {
+					if (num == 1) num = 5;
+					else
+						num--;
+				}
+				var imgTag = document.getElementById("main");
+				imgTag.setAttribute("src.css", "../images/main_img0" + num + ".jpg");
+			}
 
-                <div class="masking"><img src="images/masking.png"></div>
+		</script>
+		<!--section_1-->
+		<div id="btn">
+			<div id="btn_bg">
+				<img src="images/btn_1.jpg">
+				<div class="opacity">
+					<p class="icon"><img src="images/icon_1.png"></p>
+				</div>
+			</div>
+			<div id="btn_bg">
+				<img src="images/btn_2.jpg">
+				<div class="opacity">
+					<p class="icon"><img src="images/icon_3.png"></p>
+				</div>
+			</div>
+			<div id="btn_bg"><img src="images/btn_3.jpg">
+				<div class="opacity">
+					<p class="icon"><img src="images/icon_2.png"></p>
+				</div>
+			</div>
+			<div id="btn_bg"><img src="images/btn_4.jpg">
+				<div class="opacity">
+					<p class="icon"><img src="images/icon_4.png"></p>
+				</div>
+			</div>
+		</div>
+		<!--section_2-->
+		<div id="section_2">
+			<div class="line"></div>
+			<h1>BEST</h1>
+			<hr class="best">
+			<div class="best">
+				<ul class="cam">
+					<li class="leica">
+						<p class="img"><img class="cam" src="images/btn_1.jpg"></p>
+					</li>
+					<li class="box">
+						<p class="text"><span class="color">Leica</span> mp silver<br><span class="scale">35mm 0.72</span>
+						</p>
+						<p class="price">1,200,000 ₩</p>
+					</li>
+					<li class="sub_img"><img src="images/sub_img_1.jpg"></li>
+				</ul>
+				<ul class="film">
+					<li class="kodak">
+						<p class="img"><img class="film" src="images/kodak.jpg"></p>
+					</li>
+					<li class="box">
+						<p class="text"><span class="color">KODAK</span> ColoePlus silver<br><span class="scale">35mm iso 200, 36 EXR</span>
+						</p>
+						<p class="price">8,900 ₩</p>
+					</li>
+					<li class="sub_img"><img src="images/sub_img_2.jpg"></li>
+				</ul>
+			</div>
+		</div>
 
-                <div class="film_box">
-                    <p class="text">
-                        KODAK<br><span class="color_1">ULTRAMAX</span> 400<br>
-                        <span class="scale">35mm, 36 Exposures</span>
-                        <br><br><br>
-                        11,000 ₩
-                    </p>
-                    <p class="empty"></p>
-                    <p class="img_1">
-                        <img src="images/kodak_ultra.jpg">
-                    </p>
+		<!--section_3_video-->
+		<div id="section_3">
+			<div id="video">
+				<div class="polaroid">
+					<img src="images/polaroid_1.jpg">
+				</div>
+				<div class="youtube"><iframe width="630" height="340" src="https://www.youtube.com/embed/G6_F7Wwj-fA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<br><br><br><br>
 
-                    <br><br>
+					<p class="video_text">필름 비교 영상 &#40;유튜버 코코그래퍼&#41;</p>
+				</div>
 
-                    <p class="img_2">
-                        <img src="images/kodak_color.jpg">
-                    </p>
-                    <p class="empty"></p>
-                    <p class="text_2">
-                        KODAK<br><span class="color_2">PROTRA </span> 400<br>
-                        <span class="scale">35mm, 36 Exposures</span>
-                        <br><br><br>
-                        18,000 ₩
-                    </p>
-                </div>
-                <div class="line"></div>
-            </div>
-        </div>
+				<div class="masking"><img src="images/masking.png"></div>
 
-        <!--section_4-->
-        <div id="section_4">
-            <div id="gallery">
-                <div class="img_1" data-aos="fade-right" data-aos-anchor-placement="middle-bottom"><img src="images/main_img02.jpg"></div>
-                <div class="img_2" data-aos="fade-left" data-aos-anchor-placement="middle-bottom"><img src="images/main_img03.jpg"></div>
-                <div class="img_3" data-aos="fade-right" data-aos-anchor-placement="middle-bottom"><img src="images/main_img04.jpg"></div>
-                <div class="img_4" data-aos="fade-left" data-aos-anchor-placement="middle-bottom"><img src="images/main_img05.jpg"></div>
+				<div class="film_box">
+					<p class="text">
+						KODAK<br><span class="color_1">ULTRAMAX</span> 400<br>
+						<span class="scale">35mm, 36 Exposures</span>
+						<br><br><br>
+						11,000 ₩
+					</p>
+					<p class="empty"></p>
+					<p class="img_1">
+						<img src="images/kodak_ultra.jpg">
+					</p>
 
-            </div>
-        </div>
-    </div>
+					<br><br>
 
-    <!--copyright_section-->
-    <div id="copy_wrap">
-        <div id="copyright">
-            <div class="copy_logo">
-                <a href="main.html">
-                    <p class="logo_img"></p>
-                    <p class="logo_text">
-                        필&#59;&nbsp;름<br>
-                        <span>&nbsp;현상소</span>
-                    </p>
-                </a>
-            </div>
-            <div class="copy_menu">
-                <p class="menu"><a href="#a">개인정보취급방침</a></p>
-                <p class="menu"><a href="#a">채용안내</a></p>
-                <p class="menu"><a href="#a">이용약관</a></p>
-                <p class="menu"><a href="#a">이용안내</a></p>
-                <p class="menu"><a href="#a">입점/제휴문의</a></p>
-            </div>
-            <div class="copy_text">
-                <p class="text">
-                    COMPANY : 필; 카 필름 현상소 대표자 : 장우석<br>
-                    주소 : 경기도 용인시 기흥구 FAX : 031-123-4567<br>
-                    e-mail : w_dol97@icloud.com<br>
-                    사업자번호 : 123-45-67890 등록판매업신고 : 제 2021-기흥구-7272<br>
-                    계좌번호 : 국민은행 장우석 359302-04-141328
-                </p>
-            </div>
-            <div class="copy_icon">
-                <p class="insta"><a href="#a"><img src="images/insta_icon.png"></a></p>
-                <p class="mail"><a href="sendto:w_dol97@icloud.com"><img src="images/mail_icon.png"></a></p>
-            </div>
-        </div>
-    </div>
+					<p class="img_2">
+						<img src="images/kodak_color.jpg">
+					</p>
+					<p class="empty"></p>
+					<p class="text_2">
+						KODAK<br><span class="color_2">PROTRA </span> 400<br>
+						<span class="scale">35mm, 36 Exposures</span>
+						<br><br><br>
+						18,000 ₩
+					</p>
+				</div>
+				<div class="line"></div>
+			</div>
+		</div>
+
+		<!--section_4-->
+		<div id="section_4">
+			<div id="gallery">
+				<div class="img_1" data-aos="fade-right" data-aos-anchor-placement="middle-bottom"><img src="images/main_img02.jpg"></div>
+				<div class="img_2" data-aos="fade-left" data-aos-anchor-placement="middle-bottom"><img src="images/main_img03.jpg"></div>
+				<div class="img_3" data-aos="fade-right" data-aos-anchor-placement="middle-bottom"><img src="images/main_img04.jpg"></div>
+				<div class="img_4" data-aos="fade-left" data-aos-anchor-placement="middle-bottom"><img src="images/main_img05.jpg"></div>
+
+			</div>
+		</div>
+	</div>
+
+	<!--copyright_section-->
+	<div id="copy_wrap">
+		<div id="copyright">
+			<div class="copy_logo">
+				<a href="main.html">
+					<p class="logo_img"></p>
+					<p class="logo_text">
+						필&#59;&nbsp;름<br>
+						<span>&nbsp;현상소</span>
+					</p>
+				</a>
+			</div>
+			<div class="copy_menu">
+				<p class="menu"><a href="#a">개인정보취급방침</a></p>
+				<p class="menu"><a href="#a">채용안내</a></p>
+				<p class="menu"><a href="#a">이용약관</a></p>
+				<p class="menu"><a href="#a">이용안내</a></p>
+				<p class="menu"><a href="#a">입점/제휴문의</a></p>
+			</div>
+			<div class="copy_text">
+				<p class="text">
+					COMPANY : 필; 카 필름 현상소 대표자 : 장우석<br>
+					주소 : 경기도 용인시 기흥구 FAX : 031-123-4567<br>
+					e-mail : w_dol97@icloud.com<br>
+					사업자번호 : 123-45-67890 등록판매업신고 : 제 2021-기흥구-7272<br>
+					계좌번호 : 국민은행 장우석 359302-04-141328
+				</p>
+			</div>
+			<div class="copy_icon">
+				<p class="insta"><a href="#a"><img src="images/insta_icon.png"></a></p>
+				<p class="mail"><a href="sendto:w_dol97@icloud.com"><img src="images/mail_icon.png"></a></p>
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>

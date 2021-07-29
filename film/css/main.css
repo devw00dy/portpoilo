@@ -244,47 +244,43 @@ tilte {
 	width: 90px;
 	height: 90px;
 	border-radius: 50%;
-	background: #000;
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
 	left: 50px;
-	opacity: 0.7;
+	opacity: 1;
 	font-size: 70px;
 	color: #fff;
 	line-height: 90px;
 	text-align: center;
-	padding-right: 5px;
-	box-sizing: border-box;
 	border: 0;
+	background: none;
 }
 
 #main button.btn_r {
 	width: 90px;
 	height: 90px;
 	border-radius: 50%;
-	background: #000;
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
 	right: 50px;
-	opacity: 0.7;
+	opacity: 1;
 	font-size: 70px;
 	color: #fff;
 	line-height: 90px;
 	text-align: center;
-	padding-left: 5px;
-	box-sizing: border-box;
 	border: 0;
+	background: none;
 }
 
 #main button.btn_l:hover {
-	background: #ffa30f;
+	color: #ffa30f;
     cursor: pointer;
 }
 
 #main button.btn_r:hover {
-	background: #ffa30f;
+	color: #ffa30f;
     cursor: pointer;
 }
 
@@ -294,7 +290,7 @@ tilte {
 	width: 1300px;
 	height: 516px;
 	margin: 0 auto;
-	margin-top: 40px;
+	margin-top: 240px;
 }
 
 #btn > div#btn_bg {
@@ -714,7 +710,7 @@ tilte {
 #copy_wrap {
 	width: 100%;
 	position: absolute;
-    top: 5706px;
+    top: 5906px;
 	left: 0;
     background: #dedede;
 }

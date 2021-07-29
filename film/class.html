@@ -32,9 +32,11 @@
 			})
 
 		});
+
 	</script>
 	<script>
 		AOS.init();
+
 	</script>
 	<!--top_section-->
 	<div id="header_bg" class="deactive">
@@ -77,18 +79,94 @@
 	</div>
 	<!--main_section-->
 	<div id="main">
-	    <div id="class_info">
-	        <div class="img"><img src="images/class_info.jpg"></div>
-            <div class="text"><span>8월</span> 필름 카메라
-	        <br>원데이 클래스</div>
-	    </div>
-	    
-	    <div id="comparison">
-	        <div id="cmp_img">
-	            <div class="img"><img src="images/class_bg_1.jpg"></div>
-	            <div class="text">수강생 작품</div>
-	        </div>
-	    </div>
+		<div id="class_info">
+			<img src="images/top_bg.jpg">
+			<div class="img_1" data-aos="fade-down" data-aos-delay="3000" data-aos-duration="3000"><img src="images/class_bg.jpg"></div>
+			<div class="img_2" data-aos="fade-up" data-aos-delay="3000" data-aos-duration="3000"><img src="images/class_bg_1.jpg"></div>
+		</div>
+	</div>
+
+	<script>
+		AOS.init();
+
+	</script>
+
+	<div id="stu">
+		<table>
+			<tr>
+				<td colspan="5">
+				<h2>수강생 작품</h2>
+				<img class="main" src="images/main_img01.jpg" name="upimg"></td>
+			</tr>
+
+			<tr>
+				<td>
+					<div id="box" onclick="document.upimg.src='images/main_img01.jpg'">
+						<img src="images/main_img01.jpg"><br><br>제주 앞바다
+						<div class="box_sup" onclick="document.upimg.src='images/main_img01.jpg'"><span>MORE</span></div>
+					</div>
+				</td>
+				<td>
+					<div id="box" onclick="document.upimg.src='images/main_img02.jpg'">
+						<img src="images/main_img02.jpg"><br><br>도쿄의 어느 호수
+						<div class="box_sup" onclick="document.upimg.src='images/main_img02.jpg'"><span>MORE</span></div>
+					</div>
+				</td>
+				<td>
+					<div id="box" onclick="document.upimg.src='images/main_img03.jpg'">
+						<img src="images/main_img03.jpg"><br><br>쿠사츠 온천
+						<div class="box_sup" onclick="document.upimg.src='images/main_img03.jpg'"><span>MORE</span></div>
+					</div>
+				</td>
+				<td>
+					<div id="box" onclick="document.upimg.src='images/main_img04.jpg'">
+						<img src="images/main_img04.jpg"><br><br>카멜리아 힐
+						<div class="box_sup" onclick="document.upimg.src='images/main_img04.jpg'"><span>MORE</span></div>
+					</div>
+				</td>
+				<td>
+					<div id="box" onclick="document.upimg.src='images/main_img05.jpg.jpg'">
+						<img src="images/main_img05.jpg"><br><br>어느 억새 밭
+						<div class="box_sup" onclick="document.upimg.src='images/main_img05.jpg'"><span>MORE</span></div>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<!--table-->
+	<div id="table">
+		<table>
+			<tr>
+				<td></td>
+				<td>풍경 원데이 클래스</td>
+				<td>인물 원데이 클래스</td>
+				<td>보정 원데이 클래스</td>
+			</tr>
+
+			<tr>
+				<td>초급반</td>
+				<td>월,금 10시~12시</td>
+				<td>월,금 14시~16시</td>
+				<td>월,금 18시~20시</td>
+			</tr>
+
+			<tr>
+				<td>중급반</td>
+				<td>화,목 10시~12시</td>
+				<td>화,목 14시~16시</td>
+				<td>화,목 18시~20시</td>
+			</tr>
+
+			<tr>
+				<td>주말반</td>
+				<td>토,일 10시~12시</td>
+				<td>토,일 14시~16시</td>
+				<td>토,일 18시~20시</td>
+			</tr>
+		</table>
+		<br>
+		<p>풍경, 인물 클래스는 주 8회 이루어지며 총 인원은 5명 월 20만원 수강료를 부담하고 있습니다.<br>
+			라이트룸 포토샵 보정 클래스는 주 8회 이루어지며 총 인원은 10명 월 10만원 수강료를 부담하고 있습니다.</p>
 	</div>
 
 	<!--copyright_section-->
@@ -125,4 +203,6 @@
 			</div>
 		</div>
 	</div>
-</body></html>
+</body>
+
+</html>
