@@ -12,12 +12,37 @@
         myFnc();
         myFnc();*/
         
+       
+      /*  var count = 0;
         
-        var count = 0;
         
+        myFnc();
+        
+        function myFnc(){
+            count++;
+            document.write("hello"+count,"<br>");
+        }
+        
+        myFnc();
+        */
+        var color = ["white","yellow","aqua","purple"];
+        
+        var i=0;
+        
+        function changeColor(){
+            i++;
+            if(i>= color.length){
+                i=0;
+            }
+            
+            var bodyTag = document.getElementById("bgcolor");
+            bodyTag.style.backgroundColor= color[i];
+            
+            
+        } 
     </script>
 </head>
-<body>
-    
+<body id="bgcolor">
+    <button onclick="changeColor();">배경색 바꾸기</button>
 </body>
 </html>

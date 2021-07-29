@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+    /*function myFnc(name, area){
+        document.write("안녕하세요. "+name+"입니다.","<br>");
+        document.write("사는 곳은 "+area+"입니다.","<br>");
+    }
+    myFnc("홍길동","서울");
+    myFnc("김민수","부산");*/
+        
+   /* var adminId = "admin";
+    var adminPw = "1234";
+    
+    function login(id, pw){
+        if(id==adminId){
+            if(pw==adminPw){
+                document.write(id+"님 방문을 환영합니다.");
+            }else{
+                alert("잘못된 비밀번호 입니다.");
+            }
+        }else{
+            alert("존재하지 않는 아이디입니다.");
+        }
+    }    
+    
+    var userId = prompt("아이디를 입력하세요.", "");
+    var userPw = prompt("패스워드를 입력하세요.","");
+    
+    login(userId, userPw);
+    */
+    function testAvg(arrDate){
+       var sum=0;
+        for(var i=0;i<arrDate.length;i++){
+         sum += Number(prompt(arrDate[i]+"점수는?","0")); 
+    }
+        
+        var avg = sum / arrDate.length;
+        return avg;
+    }
+        
+    var arrSubject = ["국어","수학"];
+    var result = testAvg(arrSubject);
+        
+    document.write("평균 점수는" + result + "점입니다.");    
+        
+        
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

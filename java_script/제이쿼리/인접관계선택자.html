@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"></script>
+    
+    <script>
+       /* $(function(){
+           $("h2").next().css("color","green"); //동생요소
+           $("h2").parent().css("border","1px solid #f00"); //부모요소
+        }); */ 
+        
+   /*            $(function(){
+               $("#list1").parent().css("border","1px solid red");
+           }); */
+        
+        $(function(){
+            $("#wrap").children("h1").css("color","red");
+        });
+    </script>
+    
+</head>
+<body>
+   
+  
+    
+    <div id="wrap">
+        <h1>인접 관계 선택자</h1>
+        <p>내용1</p>
+        <section>
+            <h1>하위 요소 선택자</h1>
+            <p>내용2</p>
+        </section>
+    </div>
+              
+     <!--  <ul id="wrap">
+        <li>리스트1
+            <ul>
+                <li id="list1">리스트1-1</li>
+                <li>리스트1-2</li>
+            </ul>
+        </li>
+        <li>리스트2</li>
+        <li>리스트3</li>
+    </ul>-->
+    
+    
+</body>
+</html>

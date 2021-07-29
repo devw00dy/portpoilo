@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        /*var 참조변수 = setInterval(funcion() {코드}, 3000));
+        var 참조변수 = setInterval("코드", 3000));
+        
+        clearInterval(참조변수);*/
+        var addNum = 0;
+        var subNum = 100;
+        
+        var auto1 = setInterval(function(){
+            addNum++;
+            console.log("addNum: "+addNum);
+        },3000);
+        
+        var auto2 = setInterval(function(){
+            subNum--;
+            console.log("subNum :"+subNum);
+        },3000);
+            
+    </script>
+</head>
+<body>
+    <button onclick="clearInterval(auto1)">증가 정지</button>
+    <button onclick="clearInterval(auto2)">감소 정지</button>
+</body>
+</html>
