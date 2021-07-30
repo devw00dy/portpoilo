@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    
+    
+    <script>
+        $(function(){
+            
+            //전체 메뉴시작
+           /* $("header nav ul.gnb > li").hover(function(){
+                $("ul.sub").stop().slideDown();
+            }, function(){
+               $("ul.sub").stop().slideUp(); 
+            });*/
+            
+            $("header nav ul.gnb > li").hover(function(){
+                $(this).children("ul.sub").stop().slideDown();
+            }, function(){
+                $(this).children("ul.sub").stop().slideUp();
+            });
+            
+            
+            
+            
+            
+        });/*끝*/
+    </script>
+    
+    <style>
+        * { padding: 0; margin: 0;}
+        ul { list-style: none;}
+        a { text-decoration: none;}
+        
+        header {
+            width: 1200px;
+            height: 100px;
+            margin: 0 auto;
+            border: 1px solid red;
+        }
+        header h1 {
+            width: 200px;
+            height: 100px;
+            background: #ccc;
+            float:left;
+        }
+        
+        header nav {
+            width: 700px;
+            border: 1px solid blue;
+            float: right;
+            margin-top: 40px;
+        }
+        
+        header nav ul.gnb {
+            width: 100%;
+        }
+        header nav ul.gnb > li {
+            width: 25%;
+            float: left;
+            text-align: center;
+            position: relative;
+        }
+        header nav ul.gnb > li > a {
+            display: block;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            background: #555;
+            color:#fff;
+            font-size: 22px;
+        }
+        header nav ul.gnb > li:hover > a {
+            background: #333;
+        }
+        
+        header nav ul.gnb > li > ul.sub {
+            width: 100%;
+            height: 160px;
+            background: #ddd;
+            position: absolute;
+            left:0;
+            top:50px;
+            display: none;
+        }
+        header nav ul.gnb > li > ul.sub > li {
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            font-size: 18px;
+        }
+        header nav ul.gnb > li > ul.sub > li > a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        header nav ul.gnb > li > ul.sub > li:hover > a {
+            background: #777;
+            color:#fff;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1>로고</h1>
+        <nav>
+            <ul class="gnb">
+                <li><a href="#a">메뉴1</a>
+                    <ul class="sub">
+                        <li><a href="#a">서브메뉴1</a></li>
+                        <li><a href="#a">서브메뉴2</a></li>
+                        <li><a href="#a">서브메뉴3</a></li>
+                        <li><a href="#a">서브메뉴4</a></li>
+                    </ul><!--.sub-->
+                </li>
+                <li><a href="#a">메뉴2</a>
+                    <ul class="sub">
+                        <li><a href="#a">서브메뉴1</a></li>
+                        <li><a href="#a">서브메뉴2</a></li>
+                        <li><a href="#a">서브메뉴3</a></li>
+                        <li><a href="#a">서브메뉴4</a></li>
+                    </ul><!--.sub-->    
+                </li>
+                <li><a href="#a">메뉴3</a>
+                    <ul class="sub">
+                        <li><a href="#a">서브메뉴1</a></li>
+                        <li><a href="#a">서브메뉴2</a></li>
+                        <li><a href="#a">서브메뉴3</a></li>
+                        <li><a href="#a">서브메뉴4</a></li>
+                    </ul><!--.sub-->
+                </li>
+                <li><a href="#a">메뉴4</a>
+                    <ul class="sub">
+                        <li><a href="#a">서브메뉴1</a></li>
+                        <li><a href="#a">서브메뉴2</a></li>
+                        <li><a href="#a">서브메뉴3</a></li>
+                        <li><a href="#a">서브메뉴4</a></li>
+                    </ul><!--.sub-->
+                </li>
+            </ul>    
+        </nav>
+    </header>
+</body>
+</html>

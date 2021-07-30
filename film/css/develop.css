@@ -222,167 +222,113 @@ tilte {
 }
 
 /*section_1*/
-#main_wrap {
-    width: 100%;
+#main {
+    width: 1900px;
     position: absolute;
     top: 0;
     left: 0;
 }
 
-#class_info {
-    width: 1900px;
-    position: relative;
-	top: 0;
-	left: 0;
-}
-
-#class_info img {
+#banner {
 	width: 1900px;
-	height: 1000px;
-	object-fit: fill;
-}
-
-#class_info div.img_1 {
-    position: absolute;
-	top: 300px;
-	left: 150px;
-}
-
-#class_info div.img_1 img {
-	width: 750px;
-	height: 503px;
-	object-fit: cover;
-}
-
-#class_info div.img_2 {
-	position: absolute;
-	top: 300px;
-	right: 150px;
-}
-
-#class_info div.img_2 img {
-	width: 750px;
-	height: 503px;
-	object-fit: cover;
-}
-
-#cmp_img div.text {
-	font-size: 36px;
-	color: #000;
-}
-
-/*table*/
-#table {
-	width: 1300px;
+	height: 1180px;
 	margin: 0 auto;
-}
-#table table {
-	width: 1050px;
-	margin: 0 auto;
-	border-collapse: collapse;
-	margin-top: 100px;
-}
-
-#table td {
-	font-size: 42px;
-	color: #222;
-	text-align: center;
-	font-family: 'Nanum Brush Script', cursive;
-	border: 3px solid #ddd;
-	border-collapse: collapse;
-	padding: 5px 10px;
-}
-
-#table p {
-	width: 1050px;
-	margin: 0 auto;
-}
-
-/*student*/
-#stu {
-	width: 1280px;
-	margin: 0 auto;
-}
-
-#stu > table {
-	width: 1000px;
-	height: 900px;
-	border: 1px solid #ddd;
-	border-collapse: collapse;
-	margin: 0 auto;
-	margin-bottom: 70px;
-}
-
-#stu > table > tr,td {
-	border: 1px solid #ddd;
-}
-
-#stu tr td {
-	width: 200px;
-	height: 200px;
-	font-size: 12px;
-	color: #333;
-	text-align: center;
-	cursor: pointer;
-}
-
-#stu tr td #box {
-	width: 200px;
-	height: 200px;
-	border: 0;
 	position: relative;
-	overflow: hidden;
-}
-
-#stu tr td #box div.box_sup {
-	width: 200px;
-	height: 200px;
-	line-height: 200px;
-	background: rgba(0,0,0,0.7);
-	position: absolute;
-	top: -260px;
+	top: 0;
 	left: 0;
 }
 
-#stu tr td #box:hover div.box_sup {
+#banner img {
+	width: 1900px;
+	object-fit: cover;
+	position: absolute;
 	top: 0;
-	transition: 0.6s;
+	left: 0;
 }
 
-#stu tr td #box div.box_sup span {
-	color: #fff;
-	border: 1px solid #fff;
-	padding: 0 2px;
+#banner div.banner_line {
+	width: 1900px;
+	height: 100px;
+	position: absolute;
+	top: 1080px;
+	left: 0;
+	background: #675c50;	
 }
 
-#stu tr:last-child img {
-	width: 115px;
-	margin-top: 40px;
+#price {
+	position: relative;
 }
 
-#stu tr:first-child td {
-	text-align: center;
-	width: 1000px;
-	height: 700px;
-	cursor: default;
+#price img {
+	width: 1900px;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
-#stu tr:first-child td h2 {
-	text-align: left;
+#price div.text {
+	width: 1280px;
+	height: 500px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#price div.text ul {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#price div.text ul.text_1 li {
+	padding: 10px;
+}
+
+#price div.text ul li:first-child {
+	width: 500px;
+	height: 55px;
 	font-size: 24px;
-	padding-left: 100px;
-	padding-bottom: 20px;
+	color: #333;
+	display: block;
+	border-bottom: 2px solid #333;
+	padding: 10px;
+	margin: 20px;
 }
 
-#stu table tr:first-child td img.main {
-	width: 800px;
+#price div.text ul.text_1 li:first-child {
+	width: 570px;
+}
+
+#price div.text ul li {
+	width: 250px;
+	height: 150px;
+	font-size: 18px;
+	color: #333;
+	display: inline-block;
+	padding: 10px;
+}
+
+#price div.text ul li:first-child span {
+	font-size: 16px;
+}
+
+#price div.text ul li.half {
+	width: 250px;
+	padding: 10px;
+}
+
+#price div.text ul li.size {
+	text-align: right;
+	padding: 10px;
 }
 
 /*copyright*/
 #copy_wrap {
     width: 100%;
     position: absolute;
-    top: 2585px;
+    top: 3085px;
     left: 0;
     background: #dedede;
 }
