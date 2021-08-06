@@ -257,6 +257,8 @@ tilte {
 
 #price {
 	position: relative;
+	width: 1900px;
+	height: 1267px;
 }
 
 #price img {
@@ -271,8 +273,7 @@ tilte {
 	width: 1280px;
 	height: 500px;
 	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
+	top: 335px;
 	left: 50%;
 	transform: translateX(-50%);
 }
