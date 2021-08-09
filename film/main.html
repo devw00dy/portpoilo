@@ -4,23 +4,21 @@
 <head>
 	<meta charset="UTF-8">
 	<title>main</title>
+
 	<link rel="stylesheet" href="css/main.css">
-
 	<link rel="stylesheet" href="js/main.js">
-
 	<link rel="stylesheet" href="fontawesome/css/all.min.css">
-
-	<script type="text/javascript" src="js/main.js"></script>
-
-	<script src="js/prefixfree.min.js"></script>
-
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="bxslider/dist/jquery.bxslider.css">
 
+	<script src="js/java.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/prefixfree.min.js"></script>
+	<script src="bxslider/dist/jquery.bxslider.min.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
-	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script>
 		$(function() {
 			$(document).on('scroll', function() {
@@ -33,13 +31,28 @@
 				}
 			})
 
+			$('.mainimg').bxSlider({
+				slideWidth: 800, //슬라이드 이미지 너비
+				auto: true, //자동실행
+				speed: 1000, //이동속도
+				pause: 5000, //멈춰있는 시간
+				mode: 'fade' //슬라이드 전환효과
+			});
+
+			$('.slider').bxSlider({
+				slideWidth: 300, //슬라이드 이미지 너비
+				auto: true, //자동실행
+				speed: 1000, //이동속도
+				pause: 5000, //멈춰있는 시간
+
+				maxSlides: 3, //최대 이미지 노출 갯수
+				moveSlides: 1, //슬라이드 이동시 갯수
+				slideMargin: 10, // 이미지 간격
+			});
 		});
 
 	</script>
-	<script>
-		AOS.init();
-
-	</script>
+	
 	<!--top_section-->
 	<div id="header_bg" class="deactive">
 	</div>
@@ -81,31 +94,31 @@
 	</div>
 	<!--main_section-->
 	<div id="main_wrap">
-		<div id="main">
-
-			<button class="btn_l" onclick="changePic(0);"><i class="fas fa-angle-left"></i></button>
-			<button class="btn_r" onclick="changePic(1);"><i class="fas fa-angle-right"></i></button>
+		<div id="imgbg">
+			<div id="main">
+				<div class="mainimg">
+					<div><img src="images/main_img01.jpg"></div>
+					<div><img src="images/main_img02.jpg"></div>
+					<div><img src="images/main_img03.jpg"></div>
+					<div><img src="images/main_img04.jpg"></div>
+					<div><img src="images/main_img05.jpg"></div>
+				</div>
+			</div>
+			<div id="sub">
+				<div class="slider">
+					<div><img src="images/main_img01.jpg"></div>
+					<div><img src="images/main_img02.jpg"></div>
+					<div><img src="images/main_img03.jpg"></div>
+					<div><img src="images/main_img04.jpg"></div>
+					<div><img src="images/main_img05.jpg"></div>
+				</div>
+			</div>
 		</div>
-		<script>
-			var num = 1;
 
-			function changePic(idx) {
-				if (idx) {
-					if (num == 5) num = 1;
-					else
-						num++;
-				} else {
-					if (num == 1) num = 5;
-					else
-						num--;
-				}
-				var imgTag = document.getElementById("main");
-				imgTag.setAttribute("src.css", "../images/main_img0" + num + ".jpg");
-			}
-
-		</script>
 		<!--section_1-->
 		<div id="btn">
+			<h1>STORE</h1>
+			<hr class="store">
 			<div id="btn_bg">
 				<img src="images/btn_1.jpg">
 				<div class="opacity">
@@ -131,7 +144,9 @@
 		</div>
 		<!--section_2-->
 		<div id="section_2">
-			<div class="line"></div>
+			<div id="sec_2_line">
+				<div class="line"></div>
+			</div>
 			<h1>BEST</h1>
 			<hr class="best">
 			<div class="best">
@@ -213,42 +228,45 @@
 
 			</div>
 		</div>
-	</div>
-
-	<!--copyright_section-->
-	<div id="copy_wrap">
-		<div id="copyright">
-			<div class="copy_logo">
-				<a href="main.html">
-					<p class="logo_img"></p>
-					<p class="logo_text">
-						필&#59;&nbsp;름<br>
-						<span>&nbsp;현상소</span>
+		<!--copyright_section-->
+		<div id="copy_wrap">
+			<div id="copyright">
+				<div class="copy_logo">
+					<a href="main.html">
+						<p class="logo_img"></p>
+						<p class="logo_text">
+							필&#59;&nbsp;름<br>
+							<span>&nbsp;현상소</span>
+						</p>
+					</a>
+				</div>
+				<div class="copy_menu">
+					<p class="menu"><a href="#a">개인정보취급방침</a></p>
+					<p class="menu"><a href="#a">채용안내</a></p>
+					<p class="menu"><a href="#a">이용약관</a></p>
+					<p class="menu"><a href="#a">이용안내</a></p>
+					<p class="menu"><a href="#a">입점/제휴문의</a></p>
+				</div>
+				<div class="copy_text">
+					<p class="text">
+						COMPANY : 필; 카 필름 현상소 대표자 : 장우석<br>
+						주소 : 경기도 용인시 기흥구 FAX : 031-123-4567<br>
+						e-mail : w_dol97@icloud.com<br>
+						사업자번호 : 123-45-67890 등록판매업신고 : 제 2021-기흥구-7272<br>
+						계좌번호 : 국민은행 장우석 359302-04-141328
 					</p>
-				</a>
-			</div>
-			<div class="copy_menu">
-				<p class="menu"><a href="#a">개인정보취급방침</a></p>
-				<p class="menu"><a href="#a">채용안내</a></p>
-				<p class="menu"><a href="#a">이용약관</a></p>
-				<p class="menu"><a href="#a">이용안내</a></p>
-				<p class="menu"><a href="#a">입점/제휴문의</a></p>
-			</div>
-			<div class="copy_text">
-				<p class="text">
-					COMPANY : 필; 카 필름 현상소 대표자 : 장우석<br>
-					주소 : 경기도 용인시 기흥구 FAX : 031-123-4567<br>
-					e-mail : w_dol97@icloud.com<br>
-					사업자번호 : 123-45-67890 등록판매업신고 : 제 2021-기흥구-7272<br>
-					계좌번호 : 국민은행 장우석 359302-04-141328
-				</p>
-			</div>
-			<div class="copy_icon">
-				<p class="insta"><a href="#a"><img src="images/insta_icon.png"></a></p>
-				<p class="mail"><a href="sendto:w_dol97@icloud.com"><img src="images/mail_icon.png"></a></p>
+				</div>
+				<div class="copy_icon">
+					<p class="insta"><a href="#a"><img src="images/insta_icon.png"></a></p>
+					<p class="mail"><a href="sendto:w_dol97@icloud.com"><img src="images/mail_icon.png"></a></p>
+				</div>
 			</div>
 		</div>
 	</div>
-</body>
 
+</body>
+<script>
+		AOS.init();
+
+	</script>
 </html>

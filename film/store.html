@@ -2,189 +2,213 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>필카 store</title>
-    <link rel="stylesheet" href="css/store.css">
+	<meta charset="UTF-8">
+	<title>필카 store</title>
+	<link rel="stylesheet" href="css/store.css">
 
-    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="fontawesome/css/all.min.css">
 
-    <script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/prefixfree.min.js"></script>
 
-    <script src="js/prefixfree.min.js"></script>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script>
-        $(function(){
-    $(document).on('scroll', function(){
-        if($(window).scrollTop() > 50){
-            $("#header_bg").removeClass("deactive");
-            $("#header_bg").addClass("active");
-        }else{
-            $("#header_bg").removeClass("active");
-            $("#header_bg").addClass("deactive");
-        }
-    })
 
-});
-    </script>
-    <script>
-        AOS.init();
+	<script>
+		$(function() {
 
-    </script>
-    <!--top_section-->
-    <div id="header_bg" class="deactive">
-    </div>
-    <div id="wrap_header">
-        <div id="top">
-            <div class="nav">
-                <a class="logo_btn" href="main.html"><div class="logo">
-                </div>
-                <div class="text">필름현상소&nbsp;필&#59;름</div></a>
-                <div class="btn"><a href="gallery.html">Gallery</a>
-                    <ul class="sub">
-                        <li><a href="#a">This month's</a></li>
-                        <li><a href="#a">My</a></li>
-                    </ul>
-                </div>
-                <div class="btn"><a href="store.html">Store</a>
-                    <ul class="sub">
-                        <li><a href="store_sub.html">Camera</a></li>
-                        <li><a href="store_sub.html">Film</a></li>
-                        <li><a href="store_sub.html">Cam ACC</a></li>
-                    </ul>
-                </div>
-                <div class="btn"><a href="class.html">Class</a>
-                    <ul class="sub">
-                        <li><a href="#a">Filming</a></li>
-                        <li><a href="#a">Correction</a></li>
+			$(document).on('scroll', function() {
+				if ($(window).scrollTop() > 50) {
+					$("#header_bg").removeClass("deactive");
+					$("#header_bg").addClass("active");
+				} else {
+					$("#header_bg").removeClass("active");
+					$("#header_bg").addClass("deactive");
+				}
+			})
 
-                    </ul>
-                </div>
-                <div class="btn"><a href="develop.html">Develop</a>
-                </div>
-                <div class="btn"><a href="about.html">About Us</a>
-                </div>
-                <div class="login"><a href="login.html">LOGIN</a></div>
-            </div>
-        </div>
-    </div>
-    <!--main_section-->
-    <div id="banner_wrap">
-        <div id="banner">
-            <div class="text">
-                <img src="images/banner_text.png" </div>
-                <div class="img">
-                    <img src="images/banner_img.png">
-                </div>
-            </div>
-        </div>
-    </div>
+			/*이미지 변경 문의*/
+			$('#main_wrap div img').hover(function() {
+					$(this).attr("src", $(this).attr("src").replace(/off\.jpg$/, 'on.png'));
+				},
+				function() {
+					$(this).attr("src", $(this).attr("src").replace(/on\.png$/, 'off.jpg'));
+				});
 
-    <div id="main_wrap">
-        <div id="fuji">
-            <div class="img_1">
-                <img src="images/fuji_img_1.jpg">
-            </div>
-            <div class="img_2">
-                <img src="images/fuji_img_2.jpg">
-            </div>
-            <div class="text_1">
-                <img src="images/fuji_text.png">
-            </div>
-            <div class="text_2">
-                따라올 수 없는 색감 <span>FUJI FILM</span>
-            </div>
-            <div class="text_3">
-                뛰어난 성능을 자랑하는 렌즈군
-            </div>
-            <div class="text_4">
-                무엇보다도, 감성을 자극하는 최고의 디자인
-            </div>
-        </div>
 
-        <div id="leica">
-            <div class="img_1">
-                <img src="images/leica_img_1.jpg">
-            </div>
-            <div class="img_2">
-                <img src="images/leica_img_2.jpg">
-            </div>
-            <div class="text_1">
-                <img src="images/leica_text.png">
-            </div>
-            <div class="text_2">
-                수작업, 소량생산 카메라계의 명품
-            </div>
-            <div class="text_3">
-                뛰어난 유지보수, <span>Leica</span> 이기 때문에
-            </div>
-            <div class="text_4">
-                세계 최초 35mm 카메라 역사를 증명하는 성능
-            </div>
-        </div>
+		});
 
-        <div id="canon">
-            <div class="img_1">
-                <img src="images/canon_img_1.jpg">
-            </div>
-            <div class="img_2">
-                <img src="images/canon_img_2.jpg">
-            </div>
-            <div class="text_1">
-                <img src="images/canon_text.png">
-            </div>
-            <div class="text_2">
-                가슴을 울리는 셔터 사운드, <span>CANON</span> 카메라
-            </div>
-            <div class="text_3">
-                광량에 자유로운 조리개 우선식
-            </div>
-            <div class="text_4">
-                클래식한 디자인, 입문하기 쉬운 카메라
-            </div>
-        </div>
-    </div>
+	</script>
+	<script>
+		AOS.init();
 
-    <!--copyright_section-->
-    <div id="copy_wrap">
-        <div id="copyright">
-            <div class="copy_logo">
-                <a href="main.html">
-                    <p class="logo_img"></p>
-                    <p class="logo_text">
-                        필&#59;&nbsp;름<br>
-                        <span>&nbsp;현상소</span>
-                    </p>
-                </a>
-            </div>
-            <div class="copy_menu">
-                <p class="menu"><a href="#a">개인정보취급방침</a></p>
-                <p class="menu"><a href="#a">채용안내</a></p>
-                <p class="menu"><a href="#a">이용약관</a></p>
-                <p class="menu"><a href="#a">이용안내</a></p>
-                <p class="menu"><a href="#a">입점/제휴문의</a></p>
-            </div>
-            <div class="copy_text">
-                <p class="text">
-                    COMPANY : 필; 카 필름 현상소 대표자 : 장우석<br>
-                    주소 : 경기도 용인시 기흥구 FAX : 031-123-4567<br>
-                    e-mail : w_dol97@icloud.com<br>
-                    사업자번호 : 123-45-67890 등록판매업신고 : 제 2021-기흥구-7272<br>
-                    계좌번호 : 국민은행 장우석 359302-04-141328
-                </p>
-            </div>
-            <div class="copy_icon">
-                <p class="insta"><a href="#a"><img src="images/insta_icon.png"></a></p>
-                <p class="mail"><a href="sendto:w_dol97@icloud.com"><img src="images/mail_icon.png"></a></p>
-            </div>
-        </div>
-    </div>
+	</script>
+	<!--top_section-->
+	<div id="header_bg" class="deactive">
+	</div>
+	<div id="wrap_header">
+		<div id="top">
+			<div class="nav">
+				<a class="logo_btn" href="main.html">
+					<div class="logo">
+					</div>
+					<div class="text">필름현상소&nbsp;필&#59;름</div>
+				</a>
+				<div class="btn"><a href="gallery.html">Gallery</a>
+					<ul class="sub">
+						<li><a href="#a">This month's</a></li>
+						<li><a href="#a">My</a></li>
+					</ul>
+				</div>
+				<div class="btn"><a href="store.html">Store</a>
+					<ul class="sub">
+						<li><a href="store_sub.html">Camera</a></li>
+						<li><a href="store_sub.html">Film</a></li>
+						<li><a href="store_sub.html">Cam ACC</a></li>
+					</ul>
+				</div>
+				<div class="btn"><a href="class.html">Class</a>
+					<ul class="sub">
+						<li><a href="#a">Filming</a></li>
+						<li><a href="#a">Correction</a></li>
+
+					</ul>
+				</div>
+				<div class="btn"><a href="develop.html">Develop</a>
+				</div>
+				<div class="btn"><a href="about.html">About Us</a>
+				</div>
+				<div class="login"><a href="login.html">LOGIN</a></div>
+			</div>
+		</div>
+	</div>
+	<!--main_section-->
+	<div id="banner_wrap">
+		<div id="banner">
+			<div class="text">
+				<img src="images/banner_text.png">
+			</div>
+			<div class="img">
+				<img src="images/banner_img.png">
+			</div>
+		</div>
+	</div>
+
+	<div id="main_wrap">
+		<!--fuji-->
+		<div id="fuji">
+			<!--이미지 변경 문의-->
+			<div class="img_1" data-aos="fade-right" data-aos-anchor-placement="top-center">
+				<img src="images/fuji_img_1off.jpg">
+			</div>
+			<div class="img_2" data-aos="fade-left" data-aos-anchor-placement="center-bottom">
+				<img src="images/fuji_img_2off.jpg">
+			</div>
+			<div class="text_1" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom">
+				<img src="images/fuji_text.png">
+			</div>
+			<div id="text_main" data-aos="fade-left" data-aos-anchor-placement="top-center">
+				<div class="text_2">
+					따라올 수 없는 색감 <span>FUJI FILM</span>
+				</div>
+				<div class="text_3">
+					뛰어난 성능을 자랑하는 렌즈군
+				</div>
+				<div class="text_4">
+					무엇보다도, 감성을 자극하는 최고의 디자인
+				</div>
+			</div>
+		</div>
+
+		<div id="leica">
+			<div class="img_1" data-aos="fade-left" data-aos-anchor-placement="top-center">
+				<img src="images/leica_img_1.jpg">
+			</div>
+			<div class="img_2" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
+				<img src="images/leica_img_2off.jpg">
+			</div>
+			<div class="text_1" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom">
+				<img src="images/leica_text.png">
+			</div>
+			<div id="text_main" data-aos="fade-right" data-aos-anchor-placement="top-center">
+				<div class="text_2">
+					수작업, 소량생산 카메라계의 명품
+				</div>
+				<div class="text_3">
+					뛰어난 유지보수, <span>Leica</span> 이기 때문에
+				</div>
+				<div class="text_4">
+					세계 최초 35mm 카메라 역사를 증명하는 성능
+				</div>
+			</div>
+		</div>
+
+		<div id="canon">
+			<div class="img_1" data-aos="fade-left" data-aos-anchor-placement="top-center">
+				<img src="images/canon_img_1.jpg">
+			</div>
+			<div class="img_2" data-aos="fade-right" data-aos-anchor-placement="top-center">
+				<img src="images/canon_img_2off.jpg">
+			</div>
+			<div class="text_1" data-aos="fade-right" data-aos-anchor-placement="top-center">
+				<img src="images/canon_text.png">
+			</div>
+			<div id="text_main" data-aos="fade-right" data-aos-anchor-placement="top-center">
+				<div class="text_2">
+					가슴을 울리는 셔터 사운드, <span>CANON</span> 카메라
+				</div>
+				<div class="text_3">
+					광량에 자유로운 조리개 우선식
+				</div>
+				<div class="text_4">
+					클래식한 디자인, 입문하기 쉬운 카메라
+				</div>
+			</div>
+			<div class="btn">
+				<p class="btn"><a href="store_sub.html">카메라 더보기</a></p>
+			</div>
+		</div>
+	</div>
+
+	<!--copyright_section-->
+	<div id="copy_wrap">
+		<div id="copyright">
+			<div class="copy_logo">
+				<a href="main.html">
+					<p class="logo_img"></p>
+					<p class="logo_text">
+						필&#59;&nbsp;름<br>
+						<span>&nbsp;현상소</span>
+					</p>
+				</a>
+			</div>
+			<div class="copy_menu">
+				<p class="menu"><a href="#a">개인정보취급방침</a></p>
+				<p class="menu"><a href="#a">채용안내</a></p>
+				<p class="menu"><a href="#a">이용약관</a></p>
+				<p class="menu"><a href="#a">이용안내</a></p>
+				<p class="menu"><a href="#a">입점/제휴문의</a></p>
+			</div>
+			<div class="copy_text">
+				<p class="text">
+					COMPANY : 필; 카 필름 현상소 대표자 : 장우석<br>
+					주소 : 경기도 용인시 기흥구 FAX : 031-123-4567<br>
+					e-mail : w_dol97@icloud.com<br>
+					사업자번호 : 123-45-67890 등록판매업신고 : 제 2021-기흥구-7272<br>
+					계좌번호 : 국민은행 장우석 359302-04-141328
+				</p>
+			</div>
+			<div class="copy_icon">
+				<p class="insta"><a href="#a"><img src="images/insta_icon.png"></a></p>
+				<p class="mail"><a href="sendto:w_dol97@icloud.com"><img src="images/mail_icon.png"></a></p>
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>

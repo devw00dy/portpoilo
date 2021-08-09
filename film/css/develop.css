@@ -259,78 +259,12 @@ tilte {
 	position: relative;
 	width: 1900px;
 	height: 1267px;
-}
-
-#price img {
-	width: 1900px;
-	object-fit: cover;
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
-#price div.text {
-	width: 1280px;
-	height: 500px;
-	position: absolute;
-	top: 335px;
-	left: 50%;
-	transform: translateX(-50%);
-}
-
-#price div.text ul {
-	display: inline-block;
-	vertical-align: middle;
-}
-
-#price div.text ul.text_1 li {
-	padding: 10px;
-}
-
-#price div.text ul li:first-child {
-	width: 500px;
-	height: 55px;
-	font-size: 24px;
-	color: #333;
-	display: block;
-	border-bottom: 2px solid #333;
-	padding: 10px;
-	margin: 20px;
-}
-
-#price div.text ul.text_1 li:first-child {
-	width: 570px;
-}
-
-#price div.text ul li {
-	width: 250px;
-	height: 150px;
-	font-size: 18px;
-	color: #333;
-	display: inline-block;
-	padding: 10px;
-}
-
-#price div.text ul li:first-child span {
-	font-size: 16px;
-}
-
-#price div.text ul li.half {
-	width: 250px;
-	padding: 10px;
-}
-
-#price div.text ul li.size {
-	text-align: right;
-	padding: 10px;
+	background: url(../images/top_bg.jpg) no-repeat;
 }
 
 /*copyright*/
 #copy_wrap {
     width: 100%;
-    position: absolute;
-    top: 3085px;
-    left: 0;
     background: #dedede;
 }
 

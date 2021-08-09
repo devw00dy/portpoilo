@@ -254,7 +254,7 @@ tilte {
 
 #banner div.img {
     position: absolute;
-    top: 0px;
+    top: 100px;
     left: 650px;
 }
 /*Fuji*/
@@ -268,6 +268,8 @@ tilte {
 }
 
 #fuji div.img_1 {
+	width: 563px;
+	height: 751px;
     position: absolute;
     top: 100px;
     left: 40px;
@@ -464,6 +466,24 @@ tilte {
     font-family: 'NanumBarunGothic';
     padding: 10px 20px;
     background: #005c1a;
+}
+
+#canon div.btn p.btn a {
+	display: inline-block;
+	padding: 5px 10px;
+	background: #fff;
+	font-size: 26px;
+	font-weight: bold;
+	border-radius: 50px;
+	color: #f3ae02;
+	position: absolute;
+	bottom: 200px;
+	right: 100px;
+}
+
+#canon div.btn p.btn a:hover {
+	background: #f3ae02;
+	color: #fff;
 }
 
 /*copyright*/
