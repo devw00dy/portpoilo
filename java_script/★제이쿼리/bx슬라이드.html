@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>   
+    
+  <link rel="stylesheet" href="bxslider/dist/jquery.bxslider.css">
+  
+  <!--제이쿼리를 실행을 위한 파일-->
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <!--bx슬라이더 실행을 위한 파일-->
+  <script src="bxslider/src/js/jquery.bxslider.js"></script>
+   
+ 
+    
+</head>
+<body>
+   <div class="slider">
+    <div><img src="images/main_img1.jpg"></div>
+    <div><img src="images/main_img2.jpg"></div>
+    <div><img src="images/main_img3.jpg"></div>    
+  </div> 
+</body>
+
+ <script>
+    $(document).ready(function(){
+      $('.slider').bxSlider({
+          slideWidth: 700, //슬라이드가로크기
+          auto:true //자동실행
+      });
+    });
+  </script>
+
+</html>

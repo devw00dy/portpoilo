@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    
+    
+    <script>
+        $(function(){
+            
+            
+            //메인슬라이드
+            $("ul.slider li").eq(0).siblings().css({"top":"-200px"});
+            
+            var slide = 0;
+            
+            setInterval(function(){
+                
+                if(slide<2){
+                    slide++; //1번그림, 2번으로 증가 3초 후 3번으로 증가 3초후 1번으로 초기화
+                }else {
+                    slide=0;
+                }
+                
+            $("ul.slider li").eq(slide).siblings().animate({"top":"-200px"},300);    
+            $("ul.slider li").eq(slide).animate({"top":"0px"},300);    
+                
+                
+            },3000);
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            /*$("ul.slider li").eq(0).siblings().css({left:"-700px"});
+            
+            var slideIndex = 0;
+            
+            setInterval(function(){
+                
+                if(slideIndex<2){
+                    slideIndex++;
+                }else{
+                    slideIndex=0;
+                }
+                
+            $("ul.slider li").eq(slideIndex).siblings().animate({left:"-700px"},100);
+            $("ul.slider li").eq(slideIndex).animate({left:"0px"},100);
+                
+            },3000);
+            */
+        });
+    </script>
+    
+    <style>
+        * { padding: 0; margin: 0;}
+        ul { list-style: none;}
+        a { text-decoration: none;}
+        
+        div.slide {
+            width: 700px;
+            height: 200px;
+            border: 3px solid blue;
+            margin: 0 auto;
+            position: relative;
+            margin-top: 100px;
+            overflow: hidden;
+          
+        }
+        div.slide ul.slider li {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left:0;
+            top:0;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="slide">
+        <ul class="slider">
+            <li><a href="#a"><img src="images/main_img1.jpg" alt="이미지1"></a></li>
+            <li><a href="#a"><img src="images/main_img2.jpg" alt="이미지1"></a></li>
+            <li><a href="#a"><img src="images/main_img3.jpg" alt="이미지1"></a></li>
+        </ul>
+    </div>
+</body>
+</html>
