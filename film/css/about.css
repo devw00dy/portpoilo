@@ -229,279 +229,30 @@ tilte {
     border: 0px;
 }
 
-/*section_1*/
+/*main_section*/
 #main_wrap {
 	width: 100%;
 	position: absolute;
-	top: 585px;
+	top: 0;
 	left: 0;
-}
-/*banner*/
-#banner_wrap {
-    width: 100%;
-    height: 585px;
-    background: #dddbde;
-    position: absolute;
-    top: 0;
-    left: 0;
+	background: url(../images/top_bg2.jpg) no-repeat;
 }
 
-#banner {
-    width: 1300px;
-    height: 585px;
-    position: relative;
-    top: 0;
-    margin: 0 auto;
+#map {
+	width: 1900px;
+	height: 1000px;
 }
 
-#banner div.text {
-    position: absolute;
-    top: 100px;
-    left: 0;
-}
-
-#banner div.img {
-    position: absolute;
-    top: 100px;
-    left: 650px;
-}
-/*Fuji*/
-#fuji {
-    width: 1300px;
-    height: 1200px;
-    position: relative;
-    top: 0;
-    margin: 0 auto;
-    
-}
-
-#fuji div.img_1 {
-	width: 563px;
-	height: 751px;
-    position: absolute;
-    top: 100px;
-    left: 40px;
-}
-
-#fuji div.img_2 {
-    position: absolute;
-    top: 500px;
-    right: 40px;
-}
-
-#fuji div.text_1 {
-    position: absolute;
-    top: 900px;
-    left: 40px;
-}
-
-#fuji div.text_2 {
-    display: inline-block;
-    position: absolute;
-    top: 70px;
-    left: 300px;
-    font-size: 32px;
-    color: #000;
-    font-weight: bold;
-    font-family: 'NanumBarunGothic';
-    padding: 10px 20px;
-    background: #6d869a;
-}
-
-#fuji div.text_2 span {
-    color: #fff;
-}
-
-#fuji div.text_3 {
-    display: inline-block;
-    position: absolute;
-    top: 150px;
-    left: 500px;
-    font-size: 32px;
-    color: #000;
-    font-weight: bold;
-    font-family: 'NanumBarunGothic';
-    padding: 10px 20px;
-    background: #6d869a;
-}
-
-#fuji div.text_4 {
-    display: inline-block;
-    position: absolute;
-    top: 230px;
-    left: 400px;
-    font-size: 32px;
-    color: #000;
-    font-weight: bold;
-    font-family: 'NanumBarunGothic';
-    padding: 10px 20px;
-    background: #6d869a;
-}
-
-/*Leica*/
-#leica {
-    width: 1300px;
-    height: 1200px;
-    position: relative;
-    margin: 0 auto;
-}
-
-#leica div.img_1 {
-    position: absolute;
-    top: 100px;
-    right: 40px;
-}
-
-#leica div.img_2 {
-    position: absolute;
-    top: 400px;
-    left: 40px;
-}
-
-#leica div.text_1 {
-    position: absolute;
-    top: 750px;
-    right: 40px;
-}
-
-#leica div.text_2 {
-    display: inline-block;
-    position: absolute;
-    top: 70px;
-    right: 550px;
-    font-size: 32px;
-    color: #000;
-    font-weight: bold;
-    font-family: 'NanumBarunGothic';
-    padding: 10px 20px;
-    background: #c10204;
-}
-
-#leica div.text_3 {
-    display: inline-block;
-    position: absolute;
-    top: 150px;
-    right: 350px;
-    font-size: 32px;
-    color: #000;
-    font-weight: bold;
-    font-family: 'NanumBarunGothic';
-    padding: 10px 20px;
-    background: #c10204;
-}
-
-#leica div.text_3 span {
-    color: #fff;
-}
-
-#leica div.text_4 {
-    display: inline-block;
-    position: absolute;
-    top: 230px;
-    right: 450px;
-    font-size: 32px;
-    color: #000;
-    font-weight: bold;
-    font-family: 'NanumBarunGothic';
-    padding: 10px 20px;
-    background: #c10204;
-}
-
-/*canon*/
-#canon {
-    width: 1300px;
-    height: 1500px;
-    position: relative;
-    margin: 0 auto;
-}
-
-#canon div.img_1 {
-    position: absolute;
-    top: 100px;
-    right: 40px;
-}
-
-#canon div.img_2 {
-    position: absolute;
-    top: 556px;
-    left: 40px;
-}
-
-#canon div.text_1 {
-    position: absolute;
-    top: 100px;
-    left: 40px;
-}
-
-#canon div.text_2 {
-    display: inline-block;
-    position: absolute;
-    top: 446px;
-    right: 150px;
-    font-size: 32px;
-    color: #000;
-    font-weight: bold;
-    font-family: 'NanumBarunGothic';
-    padding: 10px 20px;
-    background: #005c1a;
-}
-
-#canon div.text_2 span {
-    color: #fff;
-}
-
-#canon div.text_3 {
-    display: inline-block;
-    position: absolute;
-    top: 526px;
-    left: 250px;
-    font-size: 32px;
-    color: #000;
-    font-weight: bold;
-    font-family: 'NanumBarunGothic';
-    padding: 10px 20px;
-    background: #005c1a;
-}
-
-#canon div.text_4 {
-    display: inline-block;
-    position: absolute;
-    top: 606px;
-    right: 350px;
-    font-size: 32px;
-    color: #000;
-    font-weight: bold;
-    font-family: 'NanumBarunGothic';
-    padding: 10px 20px;
-    background: #005c1a;
-}
-
-#canon div.btn p.btn a {
-	display: inline-block;
-	padding: 5px 10px;
-	background: #fff;
-	font-size: 26px;
-	font-weight: bold;
-	border-radius: 50px;
-	color: #f3ae02;
-	position: absolute;
-	bottom: 200px;
-	right: 100px;
-	border: 2px solid #f3ae02;
-}
-
-#canon div.btn p.btn a:hover {
-	background: #f3ae02;
-	color: #fff;
-	border: 0;
+#map ul {
+	width: 1000px;
+	height: 460px;
+	margin: 0 auto;
+	margin-top: 300px;
 }
 
 /*copyright*/
 #copy_wrap {
 	width: 100%;
-	position: absolute;
-    top: 4485px;
-	left: 0;
     background: #dedede;
 }
 

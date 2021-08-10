@@ -1,0 +1,539 @@
+@import url(//fonts.googleapis.com/earlyaccess/nanumbrushscript.css);
+
+@font-face {
+	font-family: 'BMJUA';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NanumBarunGothic';
+	font-style: normal;
+	font-weight: 400;
+	src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+	src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'NanumBarunGothic';
+	font-style: normal;
+	font-weight: 700;
+	src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+	src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+}
+
+@font-face {
+	font-family: 'NanumBarunGothic';
+	font-style: normal;
+	font-weight: 300;
+	src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+	src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'BMYEONSUNG';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMYEONSUNG.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+tilte {
+	text-decoration: none;
+}
+
+/*top_section*/
+#header_bg {
+	width: 100%;
+	height: 100px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99;
+}
+
+.active {
+	background-color: #fff;
+	transition-duration: 0.5s;
+	transition-timing-function: ease;
+
+	-webkit-transition-duration: 0.4s;
+	-webkit-transition-timing-function: ease;
+}
+
+.deactive {
+
+	background-color: transparent;
+	transition-duration: 0.5s;
+	transition-timing-function: ease;
+
+	-webkit-transition-duration: 0.4s;
+	-webkit-transition-timing-function: ease;
+}
+
+#wrap_header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+#wrap_header:hover {
+	background: #fff;
+	transition: 0.5s;
+}
+
+#top {
+	width: 1300px;
+	height: 100px;
+	margin: 0 auto;
+}
+
+#top div.nav {
+	display: flex;
+}
+
+#top div.nav a.logo_btn {
+	width: 300px;
+	height: 45px;
+	display: inline-block;
+	margin-right: 200px;
+	margin-top: 25px;
+	margin-left: 20px;
+}
+
+#top div.nav a.logo_btn div.logo {
+	width: 96px;
+	height: 40px;
+	display: inline-block;
+	background: url(../images/logo.png);
+	float: left;
+}
+
+#top div.nav a.logo_btn div.text {
+	width: 180px;
+	height: 45px;
+	font-size: 38px;
+	color: #000;
+	font-family: 'Nanum Brush Script', cursive;
+	display: inline-block;
+	margin-left: 20px;
+}
+
+#top div.nav a.logo_btn:hover div.logo {
+	background: url(../images/logo_w.png);
+}
+
+#top div.nav a.logo_btn:hover div.text {
+	color: #f3ae02;
+}
+
+#top div.nav div.btn {
+	width: 130px;
+	height: 100px;
+	font-size: 34px;
+	font-family: 'Nanum Brush Script', cursive;
+	text-align: center;
+	position: relative;
+}
+
+#top div.nav div.btn a {
+	display: inline-block;
+	width: 130px;
+	height: 100px;
+	line-height: 100px;
+	color: #000;
+	text-align: center;
+}
+
+#top div.nav div.btn ul.sub {
+	position: absolute;
+	display: none;
+	top: 100px;
+	font-size: 28px;
+	font-family: 'Nanum Brush Script', cursive;
+}
+
+#top div.nav div.btn ul.sub li {
+	background: #fff;
+}
+
+#top div.nav div.btn ul.sub li a {
+	width: 130px;
+	height: 45px;
+	line-height: 45px;
+	color: #000;
+}
+
+/*#top div.nav div.btn:hover ul.sub {
+    transition: 0.5s;
+    background: #fff;
+    display: block;
+}*/
+
+/*#top div.nav div.btn:hover ul.sub > li {
+    width: 130px;
+    height: 45px;
+    line-height: 45px;
+    transition: 0.5s;
+    background: #fff;
+    opacity: 1;
+}*/
+
+/*#top div.nav div.btn:hover ul.sub > li a {
+    font-size: 28px;
+    font-family: 'Nanum Brush Script', cursive;
+    color: #000;
+    text-align: center;
+}*/
+
+#top div.nav div.btn:hover ul.sub > li a:hover {
+	color: #f3ae02;
+}
+
+#top div.nav div.btn:hover {
+	color: #f3ae02;
+}
+
+#top div.nav div.login {
+	display: inline-block;
+	width: 90px;
+	height: 30px;
+	border: 2px solid #fff;
+	border-radius: 50px;
+	background: #f3ae02;
+	font-size: 16px;
+	letter-spacing: -1px;
+	text-align: center;
+	line-height: 30px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 30px;
+}
+
+#top div.nav div.login a {
+	display: inline-block;
+	width: 90px;
+	height: 30px;
+	border-radius: 50px;
+	color: #222;
+	border: 0px;
+}
+
+/*section_1*/
+#main {
+	width: 1900px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(../images/login_bg.jpg) no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#box {
+	width: 1300px;
+	height: 1400px;
+	margin: 0 auto;
+	margin-top: 100px;
+	position: relative;
+	z-index: 2;
+}
+
+#box::after {
+	width: 1300px;
+	height: 1400px;
+	margin: 0 auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	content: "";
+	opacity: 0.9;
+	background: #fff;
+	z-index: 1;
+}
+
+#box div.box_sub {
+	width: 1300px;
+	height: 1400px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 3;
+}
+
+#join {
+	width: 800px;
+	height: 1000px;
+	margin: 0 auto;
+	padding-top: 150px;
+	z-index: 2;
+}
+
+#join h2 {
+	color: #555;
+	font-size: 30px;
+	letter-spacing: -1px;
+	padding: 20px;
+
+	text-align: center;
+	text-transform: uppercase;
+}
+
+ul.join_1 li {
+	height: 60px;
+	line-height: 60px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+ul.info li:first-child {
+	height: 60px;
+	line-height: 60px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+ul.info li {
+	height: 60px;
+	line-height: 60px;
+	border-bottom: 1px solid #ccc;
+}
+
+fieldset {
+	border: 0;
+}
+
+fieldset legend {
+	padding-top: 10px;
+}
+
+fieldset legend p {
+	font-size: 20px;
+	font-weight: bold;
+	color: #555;
+	padding: 10px;
+}
+
+#join form fieldset:nth-child(2) ul.info li:nth-child(7) label.title {
+	height: 120px;
+}
+
+label.title {
+	display: inline-block;
+	width: 220px;
+	height: 60px;
+	background: #fbfbfb;
+	padding-left: 20px;
+	box-sizing: border-box;
+}
+
+ul.info li input[type="text"] {
+	width: 220px;
+	height: 35px;
+	border: 1px solid #ddd;
+}
+
+ul.info li input[type="password"] {
+	width: 220px;
+	height: 35px;
+	border: 1px solid #ddd;
+}
+
+ul.info li p {
+	margin-top: -60px;
+}
+
+ul.info li small {
+	color: #666;
+	font-size: 14px;
+	letter-spacing: -1px;
+}
+
+ul.info li select.s1 {
+	width: 440px;
+	height: 35px;
+	border: 1px solid #ddd;
+}
+
+ul.info li:nth-child(5) input[type="text"] {
+	width: 440px;
+	height: 35px;
+	border: 1px solid #ddd;
+}
+
+ul.info li:nth-child(7) {
+	height: 120px;
+}
+
+ul.info li:nth-child(7) p {
+	margin-left: 225px;
+}
+
+ul.info li:nth-child(8) select {
+	width: 90px;
+	height: 35px;
+	border: 1px solid #ddd;
+}
+
+ul.info li:nth-child(8) input[type="tel"] {
+	width: 90px;
+	height: 35px;
+	border: 1px solid #ddd;
+}
+
+ul.info li:nth-child(9) select {
+	width: 90px;
+	height: 35px;
+	border: 1px solid #ddd;
+}
+
+ul.info li:nth-child(9) input[type="tel"] {
+	width: 90px;
+	height: 35px;
+	border: 1px solid #ddd;
+}
+
+ul.info li:nth-child(10) input[type="email"] {
+	width: 200px;
+	height: 35px;
+	border: 1px solid #ddd;
+}
+
+div.down {
+	width: 800px;
+	height: 40px;
+	text-align: center;
+	margin-top: 30px;
+}
+
+div.down input[type="submit"] {
+	width: 150px;
+	height: 40px;
+	background: #f3ae02;
+	border: 0;
+	color: #555;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+/*copyright*/
+#copy_wrap {
+	width: 100%;
+	background: #dedede;
+}
+
+#copyright {
+	width: 1300px;
+	height: 200px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#copyright div.copy_logo {
+	position: absolute;
+	top: 55px;
+	left: 50px;
+	display: inline-block;
+}
+
+#copyright div.copy_menu {
+	position: absolute;
+	top: 25px;
+	left: 330px;
+	display: inline-block;
+}
+
+#copyright div.copy_text {
+	position: absolute;
+	top: 80px;
+	left: 350px;
+	display: inline-block;
+}
+
+#copyright div.copy_icon {
+	position: absolute;
+	bottom: 25px;
+	right: 25px;
+	display: inline-block;
+}
+
+#copyright div.copy_logo a p.logo_img {
+	width: 119px;
+	height: 50px;
+	background-image: url(../images/logo-copy_g.png);
+	display: inline-block;
+	vertical-align: top;
+}
+
+#copyright div.copy_logo a p.logo_text {
+	font-size: 32px;
+	font-weight: bold;
+	color: #999;
+	font-family: 'Nanum Brush Script', cursive;
+	display: inline-block;
+	margin-left: 5px;
+	vertical-align: top;
+	line-height: 80%;
+}
+
+#copyright div.copy_logo p.logo_text span {
+	font-size: 18px;
+	font-weight: normal;
+}
+
+#copyright div.copy_logo a:hover p.logo_img {
+	background-image: url(../images/logo-copy.png);
+}
+
+#copyright div.copy_logo a:hover p.logo_text {
+	color: #222;
+}
+
+#copyright div.copy_menu p.menu {
+	font-size: 20px;
+	font-weight: bold;
+	display: inline-block;
+	margin: 10px 20px;
+	font-family: 'NanumBarunGothic';
+}
+
+#copyright div.copy_menu p.menu a {
+	color: #999;
+}
+
+#copyright div.copy_menu p.menu a:hover {
+	color: #222;
+}
+
+#copyright div.copy_text p.text {
+	font-size: 16px;
+	font-family: 'NanumBarunGothic';
+	color: #999;
+}
+
+#copyright div.copy_icon p {
+	display: inline-block;
+	margin: 0 10px;
+	vertical-align: middle;
+}

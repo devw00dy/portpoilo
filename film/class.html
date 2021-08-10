@@ -5,20 +5,19 @@
 	<meta charset="UTF-8">
 	<title>필카 class</title>
 	<link rel="stylesheet" href="css/class.css">
-
+	<link rel="stylesheet" href="js/main.js">
 	<link rel="stylesheet" href="fontawesome/css/all.min.css">
-
-	<script type="text/javascript" src="js/main.js"></script>
-
-	<script src="js/prefixfree.min.js"></script>
-
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="bxslider/dist/jquery.bxslider.css">
 
+	<script src="js/java.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/prefixfree.min.js"></script>
+	<script src="bxslider/dist/jquery.bxslider.min.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
-	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script>
 		$(function() {
 			$(document).on('scroll', function() {
@@ -31,13 +30,35 @@
 				}
 			})
 
+			$('.mainimg').bxSlider({
+				slideWidth: 800, //슬라이드 이미지 너비
+				auto: true, //자동실행
+				speed: 1000, //이동속도
+				pause: 5000, //멈춰있는 시간
+				mode: 'fade' //슬라이드 전환효과
+			});
+
+			$('.slider').bxSlider({
+				slideWidth: 300, //슬라이드 이미지 너비
+				auto: true, //자동실행
+				speed: 1000, //이동속도
+				pause: 5000, //멈춰있는 시간
+
+				maxSlides: 3, //최대 이미지 노출 갯수
+				moveSlides: 1, //슬라이드 이동시 갯수
+				slideMargin: 10, // 이미지 간격
+			});
+			
+			$("#top > div.nav > div.btn").hover(function(){
+				$(this).children("ul.sub").stop().slideDown();
+			}, function(){
+				$(this).children("ul.sub").stop().slideUp();
+			});
+			
 		});
 
 	</script>
-	<script>
-		AOS.init();
-
-	</script>
+	
 	<!--top_section-->
 	<div id="header_bg" class="deactive">
 	</div>
@@ -204,5 +225,8 @@
 		</div>
 	</div>
 </body>
+<script>
+		AOS.init();
 
+	</script>
 </html>
