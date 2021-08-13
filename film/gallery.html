@@ -32,34 +32,22 @@
 			})
 
 			$('.mainimg').bxSlider({
-				slideWidth: 800, //슬라이드 이미지 너비
+				slideWidth: 1500, //슬라이드 이미지 너비
 				auto: true, //자동실행
 				speed: 1000, //이동속도
-				pause: 5000, //멈춰있는 시간
+				pause: 7000, //멈춰있는 시간
 				mode: 'fade' //슬라이드 전환효과
 			});
 
-			$('.slider').bxSlider({
-				slideWidth: 300, //슬라이드 이미지 너비
-				auto: true, //자동실행
-				speed: 1000, //이동속도
-				pause: 5000, //멈춰있는 시간
-
-				maxSlides: 3, //최대 이미지 노출 갯수
-				moveSlides: 1, //슬라이드 이동시 갯수
-				slideMargin: 10, // 이미지 간격
-			});
-			
-			$("#top > div.nav > div.btn").hover(function(){
+			$("#top > div.nav > div.btn").hover(function() {
 				$(this).children("ul.sub").stop().slideDown();
-			}, function(){
+			}, function() {
 				$(this).children("ul.sub").stop().slideUp();
 			});
-			
-		});
 
+		});
 	</script>
-	
+
 	<!--top_section-->
 	<div id="header_bg" class="deactive">
 	</div>
@@ -74,7 +62,7 @@
 				<div class="btn"><a href="gallery.html">Gallery</a>
 					<ul class="sub">
 						<li><a href="#a">This month's</a></li>
-						<li><a href="#a">My</a></li>
+						<li><a href="login.html">My</a></li>
 					</ul>
 				</div>
 				<div class="btn"><a href="store.html">Store</a>
@@ -101,29 +89,26 @@
 	</div>
 	<!--main_section-->
 	<div id="main_wrap">
+		<div id="main_img">
+			<img src="images/gallery_main.jpg">
+			<p><a href="gallery.html#imgbg">이달의 사진</a></p>
+		</div>
 		<div id="imgbg">
 			<div id="main">
+				<h1>이달의 사진</h1>
+				<br>
 				<div class="mainimg">
-					<div><img src="images/main_img01.jpg"></div>
-					<div><img src="images/main_img02.jpg"></div>
-					<div><img src="images/main_img03.jpg"></div>
-					<div><img src="images/main_img04.jpg"></div>
-					<div><img src="images/main_img05.jpg"></div>
-				</div>
-			</div>
-			<div id="sub">
-				<div class="slider">
-					<div><img src="images/main_img01.jpg"></div>
-					<div><img src="images/main_img02.jpg"></div>
-					<div><img src="images/main_img03.jpg"></div>
-					<div><img src="images/main_img04.jpg"></div>
-					<div><img src="images/main_img05.jpg"></div>
+					<div><img src="images/main_img01_in.png"></div>
+					<div><img src="images/main_img02_in.png"></div>
+					<div><img src="images/main_img03_in.png"></div>
+					<div><img src="images/main_img04_in.png"></div>
+					<div><img src="images/main_img05_in.png"></div>
 				</div>
 			</div>
 		</div>
 
 		<!--section_1-->
-		
+
 
 		<!--section_4-->
 		<div id="section_4">
@@ -173,7 +158,5 @@
 
 </body>
 <script>
-		AOS.init();
-
-	</script>
-</html>
+	AOS.init();
+</script></html>
