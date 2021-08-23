@@ -1,0 +1,136 @@
+★반응형 html다운로드
+https://html5up.net/
+https://startbootstrap.com/themes
+
+
+★스크롤 애니메이션 적용
+http://michalsnik.github.io/aos/
+스크롤 애니메이션 사용을 위해 하단 주소를 <title>아래 붙여넣기
+
+CDN으로 사용하기
+(CSS소스)
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+(JS소스)
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</body>아래쪽에 밑에 소스 붙여넣기
+<script>
+  AOS.init();
+</script>
+
+스크롤 애니메이션 적용하려는 div에 data-aos="zoom-in-right" 값 넣기
+홈페이지 참조해서 방향 옵션값 변형
+
+===============
+★제이쿼리 사용방법
+
+https://code.jquery.com/ 접속후
+jQuery Core 3.5.1 버전 minified 마우스 오른쪽 다른이름 링크 저장 하거나 / 바로 눌러서 CDN으로 연결
+<title>태그 아래
+
+제이쿼리 사용을 위한 연결 링크 걸어주기
+<script  src="https://code.jquery.com/jquery-3.5.1.min.js">
+
+html안에
+<script>
+  $(function(){
+
+	코드작성
+  });
+</script>
+===============
+★애니메이션 적용 사이트
+https://animista.net/
+
+===============
+★ 벤더프리픽스(접두사 생략 가능하게) 사이트
+https://projects.verou.me/prefixfree/
+
+
+왼쪽 상단 2kb 버튼 마우스 오른쪽 -> 다른이름으로 링크 저장
+본인 폴더에 js폴더 만들어서 저장
+
+본인 html 파일에 </head> 안에 넣기
+
+<script src="js/prefixfree.min.js"></script>
+
+===============
+★파비콘 적용 방법
+30x30 크기로 로고 작게 만들어서 png파일로 저장
+본인 html 파일에 </head> 안에 넣기
+
+<link rel="SHORTCUT ICON" href="images/파일명.png">
+
+
+★파비콘 적용 방법(카페24 쇼핑몰)
+디자인관리->디자인 기능 설정 -> 쇼핑몰 알리미 -> 파비콘 설정
+
+===============
+★폰트어썸 적용 사이트
+https://fontawesome.com/download
+
+Download Font Awesome->free for web 다운로드
+폴더 압축 풀고 본인 폴더에 저장 폴더이름 fontawesome로 변경
+
+<link rel="stylesheet" href="fontawesome/css/all.min.css">
+소스 넣어서 적용하기
+
+
+https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free
+여기서 아이콘 영문으로 검색 후 적용하기
+
+★★다운로드 말고 CDN으로 직접 불러 오기
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+
+===============
+★디비컷 (홈페이지 참조 주소)
+https://www.dbcut.com/bbs/index.php
+
+===============
+★접두사 사용 (브라우저 버전별 CSS 지원)
+https://projects.verou.me/prefixfree/
+사이트 접속 후 only 2kb에서 마우스 오른쪽->
+다른이름으로 링크 저장 js폴더 생성후 저장
+
+html에서 불러오기
+<script src="js/prefixfree.min.js"></script>
+
+-webkit-  사파리, 크롬
+-moz- 파이어폭스
+-o- 오페라
+-ms- 익스플로러
+===============
+★html 특수문자 코드표
+https://aneok.tistory.com/86
+
+===============
+★ 웹폰트 적용(구글폰트)  - 웹주소로 연결
+https://fonts.google.com/
+
+===============
+★폰트 변환기 - 변환후 다운로드
+https://transfonter.org/
+
+컴퓨터에 있는 폰트 추가 후
+ttf,eof,woff,woff2 체크후  convert누르기
+다운로드 후 폴더 압축 해제
+
+작업 폴더 CSS폴더 안에 폰트 넣기
+css소스 url에 css/ 추가하기
+
+예>src: url('css/MoebiusKorea-Bold.eot');
+
+===============
+★나눔바른고딕 웹폰트 적용
+https://noonnu.cc/index (폰트명에 검색)
+https://noonnu.cc/font_page/36 
+
+===============
+★ 무료 사진 사이트
+https://pixabay.com/ko/
+
+===============
+★목업 다운로드
+https://www.graphberry.com/category/mock-ups
+https://www.freepik.com/free-photos-vectors/mockup
